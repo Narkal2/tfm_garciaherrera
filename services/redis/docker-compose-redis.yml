@@ -1,0 +1,16 @@
+version: '3.8'
+
+# Only builds Redis service
+services:
+  redis:
+    image: redis/redis-stack:latest
+    container_name: redis
+    restart: always
+    ports:
+        - "6379:6379"
+        - "8001:8001"
+    # Use REDIS_ARGS for redis-stack-server instead of command arguments
+    environment:
+        - REDIS_ARGS=--save 1 1
+    # volumes:
+    #     - data:/data
