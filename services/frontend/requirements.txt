@@ -1,0 +1,18 @@
+# Python
+python-dotenv==1.0.1
+pandas==2.2.1
+pydantic==2.10.3
+python-multipart==0.0.19
+
+# LLM
+langchain==0.1.20
+langchain-community==0.0.38 
+langchain-openai==0.1.0
+langchain-text-splitters==0.0.1
+langchain-experimental==0.0.56
+openai==1.14.2
+tiktoken==0.6.0
+
+# Front-end
+streamlit==1.29.0
+#st-theme==1.2.3
