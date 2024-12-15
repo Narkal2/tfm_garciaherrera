@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  backend:
+    container_name: backend
+    build: ./services/backend
+    ports:
+      - 8000:8000
+    volumes:
+      - ./services/backend:/app
+    command: uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
+    env_file:
+      - .env
+    environment:
+      - ENVIRONMENT=docker
+    depends_on:
+      - redis
+
+  frontend:
+    container_name: frontend
+    build:  ./services/frontend
+    ports:
+      - 8030:8030
+    volumes:
+      - ./services/frontend:/app
+    env_file:
+      - .env
+    environment:
+      - ENVIRONMENT=docker
+    depends_on:
+      - backend
+
+  redis:
+    image: redis/redis-stack:latest
+    container_name: redis
+    restart: always
+    ports:
+        - 6379:6379
+        - 8001:8001
+    environment:
+        - REDIS_ARGS=--save 1 1
+    # volumes:
+    #     - services/redis/data:/data
