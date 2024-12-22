@@ -129,4 +129,4 @@ if __name__ == "__main__":
     relevant_docs = retriever_pdf.get_relevant_documents(
         query="Cual es la función del producto?"
     )
-    print(relevant_docs)
+    #print(relevant_docs)

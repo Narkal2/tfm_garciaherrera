@@ -1,10 +1,14 @@
 import os
 import warnings
-from langchain_google_genai import GoogleGenerativeAI
-from langchain_openai import ChatOpenAI
+
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
+
+from langchain_google_genai import GoogleGenerativeAI
+from langchain_openai import ChatOpenAI
+from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
+
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -12,18 +16,19 @@ warnings.filterwarnings("ignore")
 
 
 class Assistant:
-    def __init__(self, retriever):
+    def __init__(self, llm_type: str, retriever):
         """
         Inicializa el asistente con un retriever que interactúa con el vectorstore.
 
         Args:
             - retriever: Objeto utilizado para recuperar documentos relevantes del vectorstore.
         """
+        self.llm_type = llm_type
         self.retriever = retriever
         self.llm = None
         self.rag_chain = None
 
-    def init_llm(self, llm_type, **llm_kwargs):
+    def init_llm(self, **llm_kwargs):
         """
         Inicializa el modelo LLM seleccionado dinámicamente.
 
@@ -31,21 +36,35 @@ class Assistant:
             - llm_type: Tipo de modelo LLM.
             - llm_kwargs: Parámetros adicionales para la configuración del modelo.
         """
-        if llm_type == "gemini-pro":
+        if self.llm_type == "Gemini-1.5-flash":
             self.llm = GoogleGenerativeAI(
-                model=llm_kwargs.get("model", "gemini-pro"),
+                model=llm_kwargs.get("model", "gemini-1.5-flash"),
                 google_api_key=os.getenv("GOOGLE_API_KEY"),
                 temperature=llm_kwargs.get("temperature", 0.3)
             )
-        elif llm_type == "gpt-4o-mini":
+
+        elif self.llm_type == "GPT-4o-mini":
             self.llm = ChatOpenAI(
-                model="gpt-3.5-turbo",
+                model="gpt-4o-mini",
                 openai_api_key = os.getenv("OPENAI_API_KEY"),
                 temperature=llm_kwargs.get("temperature", 0.3),
                 max_tokens=1000,
             )
+
+        elif self.llm_type == "Llama-3.3":
+            model = HuggingFaceEndpoint(
+                repo_id="meta-llama/Llama-3.3-70B-Instruct",
+                task="text-generation",
+                huggingfacehub_api_token = os.getenv("HUGGINGFACEHUB_API_TOKEN"),
+                temperature=llm_kwargs.get("temperature", 0.3),
+                max_new_tokens=512,
+                do_sample=False,
+                repetition_penalty=1.03,
+            )
+            self.llm = ChatHuggingFace(llm=model)
+
         else:
-            raise ValueError(f"Modelo LLM no soportado: {llm_type}")
+            raise ValueError(f"Modelo LLM no soportado: {self.llm_type}")
 
     def init_prompt(self):
         """
@@ -55,13 +74,12 @@ class Assistant:
             [
                 (
                     "human",
-                    #"""Eres un asistente conversacional de ayuda al usuario sobre uso y normativa de productos fitosanitarios.
                     """Eres un asistente conversacional que debe ayudar al usuario a obtener respuestas a sus preguntas.
                     Utiliza la información del contexto proporcionado para responder a las preguntas del usuario.
                     
                     Question: {question} 
                     Context: {context} 
-                    Answer:""",  # Si no conoces la respuesta, simplemente informa de que no dispones de la información disponible.
+                    Answer:""",
                 ),
             ]
         )
@@ -110,11 +128,10 @@ class Assistant:
             # Retrieve context using the retriever
             context = self.retriever.invoke(question)
             print("Contexto recuperado:", context)
-            response = self.rag_chain.invoke(question)
+            response = self.rag_chain.invoke(question, verbose=True)
             return response
         except Exception as e:
             return f"Error al procesar la pregunta: {e}"
-
 
 if __name__ == "__main__":
     """
@@ -133,10 +150,12 @@ if __name__ == "__main__":
                 redis_url=redis_url,
                 )
     retriever = rds.as_retriever(search_type="similarity", search_kwargs={"k": 2})
-    assistant = Assistant(retriever)
+    #assistant = Assistant(llm_type="Gemini-1.5-flash", retriever=retriever)
+    #assistant = Assistant(llm_type="GPT-4o-mini", retriever=retriever)
+    assistant = Assistant(llm_type="Llama-3.3", retriever=retriever)
 
     # Inicializar LLM y cadena RAG
-    assistant.init_llm(llm_type="google-genai")
+    assistant.init_llm(temperature=0.3)
     print(assistant.llm)
     assistant.init_prompt()
     print(assistant.prompt)

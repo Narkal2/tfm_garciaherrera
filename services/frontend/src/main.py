@@ -29,13 +29,13 @@ def send_text(query, llm_type, temperature, num_chunks):
     Returns:
         dict: Respuesta del modelo en formato JSON.
     """
-    payload = {
+    data_payload = {
         "query": query,
         "llm_type": llm_type,
         "temperature": temperature,
         "num_chunks": num_chunks,
     }
-    response = requests.post(f"{FASTAPI_URL}/query", data=payload)
+    response = requests.post(f"{FASTAPI_URL}/query", data=data_payload)
     return response.json()
 
 
@@ -65,7 +65,7 @@ def upload_files_to_vectorstore(files):
     return uploaded_names
 
 
-def extract_information(pdf_file, json_file=None):
+def extract_information(pdf_file, json_file=None, llm_type="GPT-4o-mini"):
     """
     Envía un archivo PDF y, opcionalmente, un esquema JSON al backend para la extracción de información estructurada.
 
@@ -77,13 +77,16 @@ def extract_information(pdf_file, json_file=None):
         dict: Datos estructurados extraídos del PDF en formato JSON, o `None` en caso de error.
     """
     files_payload = {
-        "pdf_file": (pdf_file.name, pdf_file.read(), "application/pdf")
+        "pdf_file": (pdf_file.name, pdf_file.read(), "application/pdf"),
     }
     if json_file:
         files_payload["json_schema"] = (json_file.name, json_file.read(), "application/json")
+    data_payload = {
+        "llm_type": llm_type
+    }
 
     try:
-        response = requests.post(f"{FASTAPI_URL}/extract_information", files=files_payload)
+        response = requests.post(f"{FASTAPI_URL}/extract_information", files=files_payload, data=data_payload)
         if response.status_code == 200:
             return response.json()
         else:
@@ -120,7 +123,7 @@ def main():
         st.sidebar.subheader("Configuración del asistente")
 
         # Selección del modelo LLM
-        llm_type = st.sidebar.radio("Seleccione el modelo LLM:", ["gemini-pro", "gpt-4o-mini", "otro-llm"])
+        llm_type = st.sidebar.radio("Seleccione el modelo LLM:", ["GPT-4o-mini", "Llama-3.3", "Gemini-1.5-flash"])
         # Configuración de temperatura
         temperature = st.sidebar.number_input(
             "Temperatura (entre 0 y 1):",
@@ -204,6 +207,9 @@ def main():
             ["Adjuntar esquema JSON", "Inferir esquema automáticamente"]
         )
 
+        # Selección del modelo LLM
+        llm_type = st.sidebar.radio("Seleccione el modelo LLM:", ["GPT-4o-mini", "Llama-3.3", "Gemini-1.5-flash"])
+
         # Subida de archivos basada en la elección del usuario
         if schema_option == "Adjuntar esquema JSON":
             st.sidebar.write("Por favor, suba los archivos necesarios:")
@@ -231,7 +237,7 @@ def main():
             if uploaded_pdf:
                 with st.spinner("Procesando archivo..."):
                     # Llamada al backend para extraer la información
-                    extraction_result = extract_information(uploaded_pdf, uploaded_json)
+                    extraction_result = extract_information(uploaded_pdf, uploaded_json, llm_type)
                     
                     if extraction_result:
                         st.success("Procesamiento completado con éxito.")

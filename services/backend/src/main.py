@@ -40,7 +40,7 @@ rds = Redis(
 @app.post("/query")
 async def post_query(
     query: str = Form(...),
-    llm_type: str = Form("gpt-4o-mini"),
+    llm_type: str = Form("GPT-4o-mini"),
     temperature: float = Form(0.3),
     num_chunks: int = Form(5)
 ):
@@ -58,8 +58,8 @@ async def post_query(
     """
     try:
         retriever = rds.as_retriever(search_type="similarity", search_kwargs={"k": num_chunks})
-        assistant = Assistant(retriever)
-        assistant.init_llm(llm_type=llm_type, temperature=temperature)
+        assistant = Assistant(llm_type=llm_type, retriever=retriever)
+        assistant.init_llm(temperature=temperature)
         assistant.init_prompt()
         assistant.init_rag_chain()
         response = assistant.ask_question(query)
@@ -76,7 +76,8 @@ async def post_query(
 
 @app.post("/extract_information")
 async def extract_information(
-    pdf_file: UploadFile = File(...), 
+    pdf_file: UploadFile = File(...),
+    llm_type: str = Form("GPT-4o-mini"),
     json_schema: Optional[UploadFile] = None
     ):
     """
@@ -99,8 +100,8 @@ async def extract_information(
             schema_content = await json_schema.read()
             schema = json.loads(schema_content)
 
-        processor = PDFProcessor(llm_type='gpt-4o-mini')
-        processor.init_llm()
+        processor = PDFProcessor(llm_type=llm_type)
+        processor.init_llm(temperature=0)
         results = processor.generate_output(pdf_path=pdf_path, schema=schema)
 
         os.remove(pdf_path)

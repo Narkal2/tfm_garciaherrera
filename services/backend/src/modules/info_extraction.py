@@ -1,47 +1,65 @@
 import os
 import json
+import sys
+from pathlib import Path
 from dotenv import load_dotenv
 import pymupdf4llm
 from langchain_openai import ChatOpenAI
-from langchain_google_genai import ChatGoogleGenerativeAI
-#import vertexai
-# from vertexai.preview.generative_models import GenerativeModel
-# from vertexai.preview import tokenization
+from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
+import google.generativeai as genai
+
 from typing import Dict, Any
 
 load_dotenv()
 
-
-# def extract_json_from_response(response):
-#     """
-#     Extrae el JSON formateado desde la respuesta del modelo.
+def extract_json_from_response(response, model_type):
+    """
+    Extrae el JSON formateado desde la respuesta del modelo.
     
-#     Args:
-#         response (GenerationResponse): Respuesta del modelo.
+    Args:
+        response (GenerationResponse): Respuesta del modelo.
 
-#     Returns:
-#         dict: Un diccionario con el contenido extraído.
-#     """
-#     try:
-#         if not response.candidates:
-#             raise ValueError("La respuesta no contiene candidatos.")
+    Returns:
+        dict: Un diccionario con el contenido extraído.
+    """
+    try:
+        if model_type == "Gemini-1.5-flash":
+            if not response.candidates:
+                raise ValueError("La respuesta no contiene candidatos.")
 
-#         candidate_content = response.candidates[0].content
-#         if not candidate_content.parts:
-#             raise ValueError("El contenido del candidato no tiene partes.")
+            candidate_content = response.candidates[0].content
+            if not candidate_content.parts:
+                raise ValueError("El contenido del candidato no tiene partes.")
 
-#         candidate_text = candidate_content.parts[0].text
-#         if not candidate_text:
-#             raise ValueError("El texto candidato está vacío.")
+            candidate_text = candidate_content.parts[0].text
+            if not candidate_text:
+                raise ValueError("El texto candidato está vacío.")
 
-#         candidate_text = candidate_text.replace("\n", '')
-#         candidate_text = candidate_text.replace("```json", '')
-#         candidate_text = candidate_text.replace("```", '')
+            candidate_text = candidate_text.replace("\n", '')
+            candidate_text = candidate_text.replace("```json", '')
+            candidate_text = candidate_text.replace("```", '')
+            candidate_text = ' '.join(candidate_text.split())
+            print(candidate_text)
+            return json.loads(candidate_text)
+        
+        elif model_type == "Llama-3.3":
+            text = response.content
+            text = text.replace("\n", '')
+            text = text.replace("```json", '')
+            text = text.replace("```", '')
+            text = ' '.join(text.split())
+            print(text)
+            return json.loads(text)
 
-#         return json.loads(candidate_text)
-
-#     except (ValueError, json.JSONDecodeError) as e:
-#         return f"Error al procesar la respuesta de Gemini: {e}"
+    except (ValueError, json.JSONDecodeError) as e:
+        print(f"Error al procesar la respuesta de Gemini/Llama: {e}")
+        try:
+            if model_type == "Gemini-1.5-flash":
+                return candidate_text
+            elif model_type == "Llama-3.3":
+                return text
+        except Exception as error_2:
+            return f"Error al procesar la respuesta de Gemini/Llama: {error_2}"
 
 
 class PDFProcessor:
@@ -60,19 +78,30 @@ class PDFProcessor:
         - llm_type: str, tipo de modelo LLM ("google-genai" o "azure-openai").
         - llm_kwargs: dict, parámetros adicionales para la configuración del modelo.
         """
-        if self.llm_type == "gemini-pro":
-            self.llm = ChatGoogleGenerativeAI(
-                model=llm_kwargs.get("model", "gemini-pro"),
-                google_api_key=os.getenv("GOOGLE_API_KEY"),
-                temperature=llm_kwargs.get("temperature", 0)
-            )
-        elif self.llm_type == "gpt-4o-mini":
+        if self.llm_type == "Gemini-1.5-flash":
+            genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
+            self.llm = genai.GenerativeModel(model_name='gemini-1.5-flash')
+
+        elif self.llm_type == "GPT-4o-mini":
             self.llm = ChatOpenAI(
                 model="gpt-4o-mini",
                 openai_api_key = os.getenv("OPENAI_API_KEY"),
                 temperature=llm_kwargs.get("temperature", 0),
                 max_tokens=4096,
             )
+
+        elif self.llm_type == "Llama-3.3":
+            model = HuggingFaceEndpoint(
+                repo_id="meta-llama/Llama-3.3-70B-Instruct",
+                task="text-generation",
+                huggingfacehub_api_token = os.getenv("HUGGINGFACEHUB_API_TOKEN"),
+                temperature=llm_kwargs.get("temperature", 0),
+                max_new_tokens=512,
+                do_sample=False,
+                repetition_penalty=1.03,
+            )
+            self.llm = ChatHuggingFace(llm=model)
+
         else:
             raise ValueError(f"Modelo LLM no soportado: {self.llm_type}")
 
@@ -103,16 +132,17 @@ class PDFProcessor:
         Returns:
             str: Generated prompt.
         """
+        
         return f"""
         Eres un experto en análisis de documentos.  
         Se te proporciona el texto extraído de un documento en formato markdown y un esquema JSON.  
         Tu tarea es analizar el contenido del documento y completarlo en el formato estructurado que indica el esquema JSON proporcionado.  
+        En caso de que el JSON esté vacío o encuentres nuevos campos, intenta inferir la estructura que debería tener el JSON resultante.
 
         Aquí está el esquema JSON:  
         {json.dumps(schema, indent=2, ensure_ascii=False)}  
 
-        Aquí está el texto extraído del documento:  
-
+        Aquí está el texto extraído del documento:
         {extracted_text}
 
         Por favor, devuelve únicamente el JSON estructurado en el formato descrito en el esquema proporcionado.
@@ -132,35 +162,25 @@ class PDFProcessor:
         try:
             extracted_text = self.process_pdf(pdf_path)
             prompt = self.generate_prompt(extracted_text, schema)
-            
-            # Validate schema function names
-            # for key in schema.keys():
-            #     if not self.is_valid_function_name(key):
-            #         raise ValueError(f"Invalid function name in schema: {key}")
 
-            if self.llm_type == "gpt-4o-mini":
+            if self.llm_type == "GPT-4o-mini":
                 structured_llm = self.llm.with_structured_output(schema=schema, method="json_mode")
                 response = structured_llm.invoke(prompt)
                 return response
             
-            ## NO FUNCIONA!! Implementar en el frontend la parte de GPT
-            # elif self.llm_type == "gemini-pro":
-            #     typed_dict_code = convert_json_schema_to_typeddict(schema, "GeminiSchema")
-            #     print(typed_dict_code)
-            #     structured_llm = self.llm.with_structured_output(schema=typed_dict_code)
-            #     response = structured_llm.invoke(prompt)
-            #     return response
-            #     response = self.llm.generate_content(prompt)
-            #     results = extract_json_from_response(response)
-            #     return results
+            elif self.llm_type == "Gemini-1.5-flash":
+                response = self.llm.generate_content(prompt)
+                results = extract_json_from_response(response, self.llm_type)
+                return results
+            
+            elif self.llm_type == "Llama-3.3":
+                response = self.llm.invoke(prompt)
+                results = extract_json_from_response(response, self.llm_type)
+                return results
         
         except Exception as e:
             print(f"Error al generar la salida estructurada: {e}")
             return {}
-
-    # def is_valid_function_name(self, name: str) -> bool:
-    #     import re
-    #     return bool(re.match(r'^[a-zA-Z_][a-zA-Z0-9_.-]{0,63}$', name))
 
     def save_output(self, results: dict, output_file: str):
         """
@@ -174,40 +194,28 @@ class PDFProcessor:
             json.dump(results, f, indent=4, ensure_ascii=False)
 
 
-
 if __name__ == "__main__":
     """
     Ejemplo de uso de la clase PDFProcessor.
     """
-    from pathlib import Path
-    pdf_file_path = Path(__file__).parent / "ES-00001.pdf"
-    schema_file_path = Path(__file__).parent / "fitosanitario_schema.json"
-    output_file_path = Path(__file__).parent / "output_gemini.json"
-
-    processor = PDFProcessor(
-        llm_type="gpt-4o-mini"
-        #llm_type="gemini-pro"
-        )
-
-    processor.init_llm(
-        #llm_type="gemini-pro",
-        #llm_type="gpt-4o-mini",
-        temperature=0
-    )
-
     try:
-        with open(schema_file_path, "r") as schema_file:
-            schema = json.load(schema_file)
-        results = processor.generate_output(pdf_path=pdf_file_path, schema=schema)
-        if results:
-            processor.save_output(results, output_file_path)
-            print(f"Output generado y guardado en: {output_file_path}")
-        else:
-            print("No se generaron resultados.")
+        pdf_file_path = Path(__file__).parent / "ES-00001.pdf"
+        schema_file_path = Path(__file__).parent / "fitosanitario_schema.json"
+        output_file_path = Path(__file__).parent / "output.json"
+        schemaless = False
 
-    except FileNotFoundError as e:
-        print(f"Error: Archivo no encontrado - {e}")
-    except json.JSONDecodeError as e:
-        print(f"Error al leer el archivo de esquema JSON: {e}")
+        processor = PDFProcessor(llm_type="Gemini-1.5-flash")
+        processor.init_llm(temperature=0)
+
+        if schema_file_path:
+            with open(schema_file_path, "r") as schema_file:
+                schema = json.load(schema_file)
+        else:
+            schema = {}
+
+        results = processor.generate_output(pdf_path=pdf_file_path, schema=schema)
+        processor.save_output(results, output_file_path)
+        print(f"Resultado guardado en: {output_file_path}")
+
     except Exception as e:
-        print(f"Error inesperado: {e}")
+        print(f"Error: {e}")
