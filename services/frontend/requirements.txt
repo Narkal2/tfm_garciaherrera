@@ -15,4 +15,3 @@ tiktoken==0.6.0
 
 # Front-end
 streamlit==1.29.0
-#st-theme==1.2.3

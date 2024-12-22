@@ -1,13 +1,15 @@
 # Python
 python-dotenv==1.0.1
 pandas==2.2.1
+seaborn==0.13.2
 pydantic==2.10.3
 python-multipart==0.0.19
 
 # Text processors
 pymupdf==1.24.12
+pymupdf4llm==0.0.17
 
-# Embeddings
+# Embeddings Huggingface
 sentence-transformers==3.3.1
 langchain-huggingface==0.1.2
 
@@ -15,12 +17,13 @@ langchain-huggingface==0.1.2
 redis==5.0.5
 faiss-cpu==1.9.0
 
-# LLM
+# Langchain
 tiktoken==0.8.0
-langchain==0.3.10
+langchain==0.3.13
+langchain-core==0.3.27
 langchain-community==0.3.10
 langchain-text-splitters==0.3.2
-#langchain-experimental==0.0.56
+langchain-experimental==0.0.56
 
 # OpenAI
 langchain-openai==0.2.11
@@ -28,6 +31,7 @@ openai==1.57.0
 
 # Google
 langchain_google_genai==2.0.5
+google-generativeai==0.8.3
 
 # Back-end
 fastapi==0.105.0
@@ -35,4 +39,3 @@ uvicorn==0.24.0
 
 # Front-end
 streamlit==1.29.0
-#st-theme==1.2.3

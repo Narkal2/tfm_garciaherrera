@@ -10,17 +10,17 @@ redis==5.0.5
 pymupdf==1.24.12
 pymupdf4llm==0.0.17
 
-
-# Embeddings
+# Embeddings Huggingface
 sentence-transformers==3.3.1
 langchain-huggingface==0.1.2
 
-# LLM
+# Langchain
 tiktoken==0.8.0
-langchain==0.3.10
+langchain==0.3.13
+langchain-core==0.3.27
 langchain-community==0.3.10
 langchain-text-splitters==0.3.2
-#transformers==4.46.3
+langchain-experimental==0.0.56
 
 # OpenAI
 langchain-openai==0.2.11
@@ -28,6 +28,7 @@ openai==1.57.0
 
 # Google
 langchain_google_genai==2.0.5
+google-generativeai==0.8.3
 
 # Back-end
 fastapi==0.105.0
