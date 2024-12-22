@@ -1,0 +1,59 @@
+{
+    "registro": {
+        "numero": "ES-00002",
+        "estado": "Cancelado",
+        "fechas": {
+            "inscripcion": "10/01/2014",
+            "renovacion": null,
+            "cancelacion": "12/08/2023",
+            "limiteVenta": "31/12/2023"
+        }
+    },
+    "nombreComercial": "NEOFLAN",
+    "titularFabricante": "GOWAN CROP PROTECTION LTD.",
+    "direccionFabricante": "Rothamsted Research, West Common, Harpenden AL5 2JQ Hertfordshire, REINO UNIDO",
+    "composicion": "BENFLURALINA 60% [WG] P/P",
+    "envases": [
+        "Bolsas de plástico de 250 g, 1 kg y 5 kg.",
+        "Sacos de plástico de 10 kg y 20 kg."
+    ],
+    "usosYDosis": [
+        {
+            "cultivo": "Algodonero",
+            "dosis": "2,5 Kg/ha",
+            "numeroAplicaciones": 1,
+            "intervalos": null,
+            "volumenCaldo": "200 - 400 l/ha",
+            "condicionesEspecificas": "Aplicar en presiembra del cultivo."
+        },
+        {
+            "cultivo": "Girasol",
+            "dosis": "2,5 Kg/ha",
+            "numeroAplicaciones": 1,
+            "intervalos": null,
+            "volumenCaldo": "200 - 400 l/ha",
+            "condicionesEspecificas": "Aplicar en presiembra del cultivo."
+        }
+    ],
+    "plazosSeguridad": {
+        "algodoneroGirasol": "NO PROCEDE"
+    },
+    "clasificacionesEtiquetado": {
+        "peligroHumano": {
+            "claseCategoria": "Carcinogenicidad. Categoría 2. Sensibilización cutánea. Categoría 1.",
+            "pictograma": "GHS07 (signo de exclamación) GHS08 (peligro para la salud)",
+            "palabraAdvertencia": "Atención",
+            "indicacionesPeligro": "H317 -Puede provocar una reacción alérgica en la piel. H351 -Se sospecha que provoca cáncer.",
+            "consejosPrudencia": "P302+P352 -EN CASO DE CONTACTO CON LA PIEL: Lavar con abundante agua y jabón. P261 -Evitar respirar el polvo/el humo/el gas/la niebla /los vapores/el aerosol. P280 -Llevar guantes, prendas y mascarilla de protección. P202 -No manipular la sustancia antes de haber leído y comprendido todas las instrucciones de seguridad. P201 -Solicitar instrucciones especiales antes del uso"
+        },
+        "peligroMedioAmbiental": {
+            "claseCategoria": "Acuático agudo 1 Acuático crónico 1",
+            "pictograma": "GHS09 (medio ambiente)",
+            "palabraAdvertencia": null,
+            "indicacionesPeligro": "H410 -Muy tóxico para los organismos acuáticos, con efectos duraderos.",
+            "consejosPrudencia": "P501 -Elimínense el contenido y/o su recipiente de acuerdo con la normativa sobre residuos peligrosos. P273 -Evitar su liberación al medio ambiente. P391 -Recoger el vertido."
+        }
+    },
+    "eliminacionProducto": "SP1: NO CONTAMINAR EL AGUA CON EL PRODUCTO NI CON SU ENVASE. (No limpiar el equipo de aplicación del producto cerca de aguas superficiales/Evítese la contaminación a través de los sistemas de evacuación de aguas de las explotaciones o de los caminos).",
+    "gestionEnvases": "Enjuague enérgicamente tres veces cada envase que utilice, vertiendo el agua de lavado al depósito (del pulverizador). Conforme a lo establecido en el Real Decreto 1416/2001, de 14 de diciembre, sobre envases de productos fitosanitarios, en la etiqueta deberá figurar la siguiente frase: Entregar los envases vacíos o residuos de envases bien en los puntos de recogida establecidos por los sistemas colectivos de responsabilidad ampliada (SIG) o directamente en el punto de venta donde se hubiera adquirido si dichos envases se han puesto en el mercado a través de un sistema de depósito, devolución y retorno."
+}

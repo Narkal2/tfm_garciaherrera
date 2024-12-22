@@ -1,0 +1,149 @@
+{
+    "usos_y_dosis_autorizados": [
+        {
+            "uso": "Ajo",
+            "agente": "Sclerotinia spp.",
+            "dosis": "0,6 - 1 l/ha",
+            "num_aplic": "1",
+            "intervalos": "300 - 800 l/ha",
+            "vol_caldo": "",
+            "condiciones_especifico": "Efectuar una aplicación desde la aparición de la 3ª hoja hasta la maduración del bulbo."
+        },
+        {
+            "uso": "Albaricoquero",
+            "agente": "Monilia, Monilinia spp.",
+            "dosis": "0,2 l/ha",
+            "num_aplic": "1-2",
+            "intervalos": "7 500 - 1500 l/ha",
+            "vol_caldo": "",
+            "condiciones_especifico": "Aplicar desde el momento de la floración hasta el inicio de la recolección."
+        },
+        {
+            "uso": "Cebolla",
+            "agente": "Sclerotinia spp.",
+            "dosis": "0,6 - 1 l/ha",
+            "num_aplic": "1",
+            "intervalos": "300 - 800 l/ha",
+            "vol_caldo": "",
+            "condiciones_especifico": "Efectuar una aplicación desde la aparición de la 3ª hoja hasta la maduración del bulbo."
+        },
+        {
+            "uso": "Cebolleta",
+            "agente": "Roya, Puccinia spp.",
+            "dosis": "0,6 - 1 l/ha",
+            "num_aplic": "1",
+            "intervalos": "300 - 800 l/ha",
+            "vol_caldo": "",
+            "condiciones_especifico": "Efectuar una aplicación desde la aparición de la 3ª hoja hasta la maduración del bulbo."
+        },
+        {
+            "uso": "Cerezo",
+            "agente": "Monilia, Monilinia spp.",
+            "dosis": "0,2 l/ha",
+            "num_aplic": "1-2",
+            "intervalos": "7 500 - 1500 l/ha",
+            "vol_caldo": "",
+            "condiciones_especifico": "Aplicar desde el momento de la floración hasta el inicio de la recolección."
+        },
+        {
+            "uso": "Chalote",
+            "agente": "Roya, Puccinia spp.",
+            "dosis": "0,6 - 1 l/ha",
+            "num_aplic": "1",
+            "intervalos": "300 - 800 l/ha",
+            "vol_caldo": "",
+            "condiciones_especifico": "Efectuar una aplicación desde la aparición de la 3ª hoja hasta la maduración del bulbo."
+        },
+        {
+            "uso": "Espárrago",
+            "agente": "Roya del espárrago, Puccinia asparagi",
+            "dosis": "0,75 l/ha",
+            "num_aplic": "1-2",
+            "intervalos": "10 500 - 1000 l/ha",
+            "vol_caldo": "",
+            "condiciones_especifico": "BBCH: 41-91"
+        },
+        {
+            "uso": "Manzano",
+            "agente": "Moteado o roña del manzano, Venturia inaequalis",
+            "dosis": "0,2 l/ha",
+            "num_aplic": "1-2",
+            "intervalos": "7 500 - 1500 l/ha",
+            "vol_caldo": "",
+            "condiciones_especifico": "Tratar desde la floración hasta el inicio de la recolección"
+        },
+        {
+            "uso": "Melocotonero",
+            "agente": "Monilia, Monilinia spp.",
+            "dosis": "0,2 l/ha",
+            "num_aplic": "1-2",
+            "intervalos": "7 500 - 1500 l/ha",
+            "vol_caldo": "",
+            "condiciones_especifico": "Aplicar desde el momento de la floración hasta el inicio de la recolección."
+        },
+        {
+            "uso": "Peral",
+            "agente": "Moteado o roña del peral, Venturia pyrina",
+            "dosis": "0,2 l/ha",
+            "num_aplic": "1-2",
+            "intervalos": "7 500 - 1500 l/ha",
+            "vol_caldo": "",
+            "condiciones_especifico": "Tratar desde la floración hasta el inicio de la recolección"
+        },
+        {
+            "uso": "Puerro",
+            "agente": "Roya, Puccinia spp.",
+            "dosis": "1 l/ha",
+            "num_aplic": "1",
+            "intervalos": "300 - 800 l/ha",
+            "vol_caldo": "",
+            "condiciones_especifico": "BBCH: 41-47"
+        },
+        {
+            "uso": "Vid de vinificación",
+            "agente": "Oídio de la vid, Erysiphe necator",
+            "dosis": "0,12 l/ha",
+            "num_aplic": "1-2",
+            "intervalos": "14 400 - 1000 l/ha",
+            "vol_caldo": "",
+            "condiciones_especifico": "Tratar desde la aparición de la 1ª hoja hasta la maduración de la uva."
+        }
+    ],
+    "plazos_de_seguridad": [
+        {
+            "uso": "Cerezo, Melocotonero",
+            "ps": "3"
+        },
+        {
+            "uso": "Ajo, Albaricoquero, Cebolla, Cebolleta, Chalote",
+            "ps": "7"
+        },
+        {
+            "uso": "Manzano, Peral, Puerro, Vid de vinificación",
+            "ps": "14"
+        },
+        {
+            "uso": "Espárrago",
+            "ps": "NO PROCEDE"
+        }
+    ],
+    "clasificaciones_y_etiquetado": {
+        "clase_y_categorias_de_peligro_humana": "Irritación ocular. Categoría 2. Sensibilización cutánea. Categoría 1. Toxicidad para la reproducción (desarrollo), categoría 2",
+        "pictograma": "GHS07 (signo de exclamación) GHS08 (peligro para la salud)",
+        "palabra_de_advertencia": "Atención",
+        "indicaciones_de_peligro": "H319 -Provoca irritación ocular grave. H317 -Puede provocar una reacción alérgica en la piel. H361d -Se sospecha que daña al feto.",
+        "consejos_de_prudencia": "P302+P352 -EN CASO DE CONTACTO CON LA PIEL: Lavar con abundante agua y jabón. P305+P351+P338 -EN CASO DE CONTACTO CON LOS OJOS: Enjuagar con agua cuidadosamente durante varios minutos. Quitar las lentes de contacto cuando estén presentes y pueda hacerse con facilidad. Proseguir con el lavado. P261 -Evitar respirar el polvo/el humo/el gas/la niebla /los vapores/el aerosol. P405 -Guardar bajo llave. P280 -Llevar guantes/prendas/gafas/máscara de protección. P201+P202 -Solicitar instrucciones especiales antes del uso y no manipular la sustancia antes de haber leído y comprendido todas las instrucciones de seguridad.",
+        "clase_y_categorias_de_peligro_medio_ambiental": "Acuático crónico 1",
+        "pictograma_medio_ambiental": "GHS09 (medio ambiente)",
+        "palabra_de_advertencia_medio_ambiental": "Atención",
+        "indicaciones_de_peligro_medio_ambiental": "H410 -Muy tóxico para los organismos acuáticos, con efectos duraderos.",
+        "consejos_de_prudencia_medio_ambiental": "P501 -Elimínense el contenido y/o su recipiente de acuerdo con la normativa sobre residuos peligrosos. P273 -Evitar su liberación al medio ambiente."
+    },
+    "eliminacion_del_producto": {
+        "sp1": "NO CONTAMINAR EL AGUA CON EL PRODUCTO NI CON SU ENVASE. (No limpiar el equipo de aplicación del producto cerca de aguas superficiales/Evítese la contaminación a través de los sistemas de evacuación de aguas de las explotaciones o de los caminos)."
+    },
+    "gestion_de_envases": {
+        "enjuague": "Enjuague enérgicamente tres veces cada envase que utilice, vertiendo el agua de lavado al depósito (del pulverizador).",
+        "entrega_de_envases": "Entregar los envases vacíos o residuos de envases bien en los puntos de recogida establecidos por los sistemas colectivos de responsabilidad ampliada (SIG) o directamente en el punto de venta donde se hubiera adquirido si dichos envases se han puesto en el mercado a través de un sistema de depósito, devolución y retorno."
+    }
+}

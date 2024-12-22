@@ -1,0 +1,155 @@
+{
+    "producto": {
+        "nombre_comercial": "",
+        "numero_registro": "",
+        "estado": "",
+        "fechas": {
+            "inscripcion": "",
+            "caducidad": ""
+        },
+        "titular": {
+            "nombre": "",
+            "direccion": "",
+            "localidad": "",
+            "pais": "",
+            "codigo_postal": ""
+        },
+        "fabricante": {
+            "nombre": "",
+            "direccion": "",
+            "localidad": "",
+            "pais": "",
+            "codigo_postal": ""
+        },
+        "composicion": [
+            {
+                "ingrediente_activo": "",
+                "concentracion": "",
+                "forma": ""
+            }
+        ],
+        "usos_y_dosis": [
+            {
+                "cultivo": "Berenjena, Tomate",
+                "enfermedades": [
+                    {
+                        "nombre": "Mildiu",
+                        "agente": "Phytophthora infestans"
+                    }
+                ],
+                "dosis": "0,4 - 0,45 Kg/ha",
+                "condiciones": "Efectuar un máximo de 3 aplicaciones a intervalos de 7-10 días y un volumen de caldo de 500-800 l/Ha. por aplicación."
+            },
+            {
+                "cultivo": "Patata",
+                "enfermedades": [
+                    {
+                        "nombre": "Mildiu",
+                        "agente": "Phytophthora infestans"
+                    }
+                ],
+                "dosis": "0,45 Kg/ha",
+                "condiciones": "Efectuar un máximo de 3 aplicaciones por campaña con un intervalo de 7 días y un volumen de caldo de 200-1.000 l/Ha."
+            },
+            {
+                "cultivo": "Tomate",
+                "enfermedades": [
+                    {
+                        "nombre": "Mildiu",
+                        "agente": "Phytophthora infestans"
+                    }
+                ],
+                "dosis": "0,4 - 0,45 Kg/ha",
+                "condiciones": "Efectuar un máximo de 3 aplicaciones a intervalos de 7-10 días y un volumen de caldo de 500-800 l/Ha. por aplicación."
+            },
+            {
+                "cultivo": "Vid",
+                "enfermedades": [
+                    {
+                        "nombre": "Mildiu",
+                        "agente": "Plasmopara viticola"
+                    }
+                ],
+                "dosis": "0,4 Kg/ha",
+                "condiciones": "Aplicar en pulverización normal desde el estadio de 3 hojas desplegadas (BBCH 14)."
+            }
+        ],
+        "condiciones_generales_uso": {
+            "max_aplicaciones": 3,
+            "volumen_caldo": "500-800 l/Ha",
+            "intervalo_aplicaciones": "7-10 días",
+            "metodo_aplicacion": [
+                "Pulverización normal"
+            ]
+        },
+        "plazos_seguridad": {
+            "cultivo": "Berenjena, Tomate, Patata, Vid",
+            "dias": [
+                {
+                    "cultivo": "Berenjena, Tomate",
+                    "dias": 3
+                },
+                {
+                    "cultivo": "Patata",
+                    "dias": 7
+                },
+                {
+                    "cultivo": "Vid",
+                    "dias": 28
+                }
+            ]
+        },
+        "envases_disponibles": [
+            ""
+        ],
+        "clasificacion_etiquetado": {
+            "peligro_humana": {
+                "pictograma": "GHS07 (signo de exclamación) GHS08 (peligro para la salud)",
+                "advertencia": "Atención",
+                "indicaciones": [
+                    "EUH 401 -A fin de evitar riesgos para las personas y el medio ambiente, siga las instrucciones de uso.",
+                    "H302 -Nocivo en caso de ingestión.",
+                    "H373 -Puede provocar daños en el tiroides y sistema nervioso tras exposiciones prolongadas o repetidas.",
+                    "H317 -Puede provocar una reacción alérgica en la piel.",
+                    "H361 -Se sospecha que daña al feto."
+                ],
+                "consejos_prudencia": [
+                    "P302+P352 -EN CASO DE CONTACTO CON LA PIEL: Lavar con abundante agua y jabón.",
+                    "P262 -Evitar el contacto con los ojos, la piel o la ropa.",
+                    "P405 -Guardar bajo llave.",
+                    "P280 -Llevar guantes y prendas de protección.",
+                    "P202 -No manipular la sustancia antes de haber leído y comprendido todas las instrucciones de seguridad.",
+                    "P260 -No respirar el polvo/el humo/el gas/la niebla/los vapores/ el aerosol.",
+                    "P201 -Solicitar instrucciones especiales antes del uso"
+                ]
+            },
+            "peligro_ambiental": {
+                "pictograma": "GHS09 (medio ambiente)",
+                "advertencia": "Atención",
+                "indicaciones": [
+                    "H410 -Muy tóxico para los organismos acuáticos, con efectos duraderos."
+                ],
+                "consejos_prudencia": [
+                    "P501 -Elimínense el contenido y/o su recipiente de acuerdo con la normativa sobre residuos peligrosos.",
+                    "P273 -Evitar su liberación al medio ambiente.",
+                    "P391 -Recoger el vertido."
+                ]
+            }
+        },
+        "mitigacion_riesgos": {
+            "manipulacion": [
+                "Para proteger a los mamíferos herbívoros, se propone la aplicación hasta la aparición de los órganos florales (BBCH>50)."
+            ],
+            "ambientales": [
+                "SP3: Para proteger los organismos acuáticos, respétese sin tratar una banda de seguridad de 10 m en patata y berenjena y 20 m en tomate hasta las masas de agua superficial. En vid, respétese sin tratar hasta las masas de agua superficial una banda de seguridad de 20 m con cubierta vegetal o 10 m con cubierta vegetal y boquillas de reducción de la deriva del 50 %."
+            ]
+        },
+        "gestion_envases": [
+            "Entregar los envases vacíos o resíduos de envases bien en los puntos de recogida establecidos por los sistemas colectivos de responsabilidad ampliada (SIG) o directamente en el punto de venta donde se hubiera adquirido si dichos envases se han puesto en el mercado a través de un sistema de depósito, devolución y retorno."
+        ],
+        "otras_indicaciones": [
+            ""
+        ],
+        "clase_usuario": ""
+    }
+}

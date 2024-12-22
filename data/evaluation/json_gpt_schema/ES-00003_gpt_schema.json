@@ -1,0 +1,102 @@
+{
+    "producto": {
+        "nombre_comercial": "CLINCHER PLUS",
+        "numero_registro": "ES-00003",
+        "estado": "Vigente",
+        "fechas": {
+            "inscripcion": "30/10/2013",
+            "caducidad": "31/03/2026"
+        },
+        "titular": {
+            "nombre": "CORTEVA AGRISCIENCE SPAIN, S.L.U.",
+            "direccion": "Campus Tecnológico Corteva Agriscience. Carretera de Sevilla-Cazalla (C-433) km 4,6",
+            "localidad": "La Rinconada",
+            "pais": "ESPAÑA",
+            "codigo_postal": "41309"
+        },
+        "fabricante": {
+            "nombre": "CORTEVA AGRISCIENCE SPAIN, S.L.U.",
+            "direccion": "Campus Tecnológico Corteva Agriscience. Carretera de Sevilla-Cazalla (C-433) km 4,6",
+            "localidad": "La Rinconada",
+            "pais": "ESPAÑA",
+            "codigo_postal": "41309"
+        },
+        "composicion": [
+            {
+                "ingrediente_activo": "CIHALOFOP-BUTIL",
+                "concentracion": "20%",
+                "forma": "[EC] P/V"
+            }
+        ],
+        "usos_y_dosis": [
+            {
+                "cultivo": "Arroz",
+                "enfermedades": [
+                    {
+                        "nombre": "Hierba gitana",
+                        "agente": "Leptochloa fusca"
+                    },
+                    {
+                        "nombre": "Pies de gallina",
+                        "agente": "Echinochloa spp."
+                    },
+                    {
+                        "nombre": "Gramas de agua",
+                        "agente": "Paspalum spp."
+                    }
+                ],
+                "dosis": "1,5 l/ha",
+                "condiciones": "Aplicar cuando la mala hierba se encuentre en estado de 2 a 4 hojas. Aplicar hasta pleno ahijamiento del arroz."
+            }
+        ],
+        "condiciones_generales_uso": {
+            "max_aplicaciones": 1,
+            "volumen_caldo": "1,5 l/ha",
+            "intervalo_aplicaciones": "",
+            "metodo_aplicacion": [
+                "Otros (ver condic.)"
+            ]
+        },
+        "plazos_seguridad": {
+            "cultivo": "Arroz",
+            "dias": 60
+        },
+        "envases_disponibles": [
+            "Botellas y garrafas de polietilentraftalato de 1, 3 y 5 l. de polietileno de alta densidad."
+        ],
+        "clasificacion_etiquetado": {
+            "peligro_humana": {
+                "pictograma": "GHS07 (signo de exclamación)",
+                "advertencia": "Atención",
+                "indicaciones": [
+                    "EUH 401 - A fin de evitar riesgos para las personas y el medio ambiente, siga las instrucciones de uso.",
+                    "H317 - Puede provocar una reacción alérgica en la piel."
+                ],
+                "consejos_prudencia": []
+            },
+            "peligro_ambiental": {
+                "pictograma": "GHS09 (medio ambiente)",
+                "advertencia": "",
+                "indicaciones": [
+                    "H411 - Tóxico para los organismos acuáticos, con efectos duraderos."
+                ],
+                "consejos_prudencia": [
+                    "P501 - Elimínense el contenido y/o su recipiente de acuerdo con la normativa sobre residuos peligrosos.",
+                    "P273 - Evitar su liberación al medio ambiente.",
+                    "P391 - Recoger el vertido."
+                ]
+            }
+        },
+        "mitigacion_riesgos": {
+            "manipulacion": [
+                "Enjuague enérgicamente tres veces cada envase que utilice, vertiendo el agua de lavado al depósito (del pulverizador)."
+            ],
+            "ambientales": []
+        },
+        "gestion_envases": [
+            "Entregar los envases vacíos o residuos de envases bien en los puntos de recogida establecidos por los sistemas colectivos de responsabilidad ampliada (SIG) o directamente en el punto de venta donde se hubiera adquirido."
+        ],
+        "otras_indicaciones": [],
+        "clase_usuario": "Profesional"
+    }
+}

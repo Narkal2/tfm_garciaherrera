@@ -1,0 +1,47 @@
+{
+    "producto": {
+        "numeroRegistro": "ES-00003",
+        "estado": "Vigente",
+        "fechaInscripcion": "30/10/2013",
+        "fechaRenovacion": null,
+        "fechaCaducidad": "31/03/2026",
+        "nombreComercial": "CLINCHER PLUS",
+        "titularFabricante": "CORTEVA AGRISCIENCE SPAIN, S.L.U. (Sevilla)",
+        "direccionFabricante": "Campus Tecnológico Corteva Agriscience. Carretera de Sevilla-Cazalla (C-433) km 4,6, 41309 LaRinconada (Sevilla), ESPAÑA",
+        "composicion": "CIHALOFOP-BUTIL 20% [EC] P/V",
+        "envases": "Botellas y garrafas de polietilentraftalato de 1, 3 y 5 l. de polietileno de alta densidad.",
+        "usosYdosis": [
+            {
+                "ambitoAplicacion": "Agrario",
+                "tipoUsuario": "Profesional",
+                "sistemaCultivo": "Aire libre",
+                "metodoAplicacion": "Otros (ver condic.)",
+                "malaHierba": "Gramas de agua, Paspalum spp.",
+                "condicionesAplicacion": "Aplicar hasta pleno ahijamiento del arroz.",
+                "cultivo": "Arroz",
+                "dosis": "1,5 l/ha",
+                "numeroAplicaciones": "1"
+            }
+        ],
+        "plazosSeguridad": {
+            "arroz": 60
+        },
+        "clasificacionesEtiquetado": {
+            "peligroHumano": {
+                "claseCategoria": "Irritación cutánea. Categoría 2.",
+                "pictograma": "GHS07 (signo de exclamación)",
+                "palabraAdvertencia": "Atención",
+                "indicacionesPeligro": "EUH 401 -A fin de evitar riesgos para las personas y el medio ambiente, siga las instrucciones de uso. H317 -Puede provocar una reacción alérgica en la piel.",
+                "consejosPrudencia": null
+            },
+            "peligroMedioambiental": {
+                "claseCategoria": "Acuático crónico 2",
+                "pictograma": "GHS09 (medio ambiente)",
+                "palabraAdvertencia": null,
+                "indicacionesPeligro": "H411 -Tóxico para los organismos acuáticos, con efectos duraderos.",
+                "consejosPrudencia": "P501 -Elimínense el contenido y/o su recipiente de acuerdo con la normativa sobre residuos peligrosos. P273 -Evitar su liberación al medio ambiente. P391 -Recoger el vertido."
+            }
+        },
+        "gestionEnvases": "Enjuague enérgicamente tres veces cada envase que utilice, vertiendo el agua de lavado al depósito (del pulverizador). Conforme a lo establecido en el Real Decreto 1416/2001, de 14 de diciembre, sobre envases de productos fitosanitarios, en la etiqueta deberá figurar la siguiente frase: Entregar los envases vacíos o resíduos de envases bien en los puntos de recogida establecidos por los sistemas colectivos de responsabilidad ampliada (SIG) o directamente en el punto de venta donde se hubiera adquirido si dichos envases se han puesto en el mercado a través de un sistema de depósito, devolución y retorno."
+    }
+}

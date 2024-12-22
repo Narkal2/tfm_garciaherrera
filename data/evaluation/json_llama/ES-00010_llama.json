@@ -1,0 +1,61 @@
+{
+    "datosDelProducto": {
+        "numeroDeRegistro": "ES-00010",
+        "estado": "Vigente",
+        "fechas": {
+            "inscripcion": "08/10/2014",
+            "renovacion": "",
+            "caducidad": "31/03/2027"
+        },
+        "nombreComercial": "PROMINENT"
+    },
+    "titularFabricante": {
+        "nombre": "GOWAN CROP PROTECTION LTD.",
+        "direccion": "Rothamsted Research, West Common, Harpenden",
+        "codigoPostal": "AL5 2JQ",
+        "pueblo": "Hertfordshire",
+        "pais": "REINO UNIDO"
+    },
+    "composicion": {
+        "producto": "PROQUINAZID 16% + TETRACONAZOL 8% [EC] P/V"
+    },
+    "envases": {
+        "descripcion": "Botellas de polietileno (HDPE) de 0,25, 0,5 y 1 l. Garrafa de polietileno (HDPE) de 5 l."
+    },
+    "usosYDosissAutorizados": [
+        {
+            "uso": "Oidio de la vid, Erysiphe",
+            "agente": "Vid",
+            "dosis": "0,217 l/ha",
+            "numeroAplicaciones": "3",
+            "intervalos": "10-14",
+            "volumenCaldo": "300-1.000 l/Ha.",
+            "condicionesEspecificas": "Aplicar desde que las inflorescencias están hinchándose hasta que todas las bayas de un racimo se tocan sin sobrepasar la dosis de 0,217 l/Ha."
+        }
+    ],
+    "plazosDeSeguridad": [
+        {
+            "uso": "Vid",
+            "plazoSeguridad": "30"
+        }
+    ],
+    "clasificacionesYEtiquetado": {
+        "clasificacionPeligroHumano": {
+            "claseYPeligro": "Carcinogenicidad. Categoría 2. Irritación ocular. Categoría 2.",
+            "pictograma": "GHS07 (signo de exclamación) GHS08 (peligro para la salud)",
+            "palabraAdvertencia": "Atención",
+            "indicacionesPeligro": "EUH 401 -A fin de evitar riesgos para las personas y el medio ambiente, siga las instrucciones de uso. EUH 066 -La exposición repetida puede provocar sequedad o formación de grietas en la piel. H319 -Provoca irritación ocular grave. H351 -Se sospecha que provoca cáncer.",
+            "consejosPrudencia": "P305+P351+P338 -EN CASO DE CONTACTO CON LOS OJOS: Enjuagar con agua cuidadosamente durante varios minutos. Quitar las lentes de contacto cuando estén presentes y pueda hacerse con facilidad. Proseguir con el lavado. P261 -Evitar respirar el polvo/el humo/el gas/la niebla /los vapores/el aerosol. P405 -Guardar bajo llave. P280 -Llevar guantes, prendas y mascarilla de protección. P202 -No manipular la sustancia antes de haber leído y comprendido todas las instrucciones de seguridad. P201 -Solicitar instrucciones especiales antes del uso"
+        },
+        "clasificacionPeligroMedioAmbiental": {
+            "claseYPeligro": "Acuático crónico 1",
+            "pictograma": "GHS09 (medio ambiente)",
+            "palabraAdvertencia": "Atención",
+            "indicacionesPeligro": "H410 -Muy tóxico para los organismos acuáticos, con efectos duraderos.",
+            "consejosPrudencia": "P501 -Elimínense el contenido y/o su recipiente de acuerdo con la normativa sobre residuos peligrosos. P273 -Evitar su liberación al medio ambiente. P391 -Recoger el vertido."
+        }
+    },
+    "gestionDeEnvases": {
+        "descripcion": "Enjuague enérgicamente tres veces cada envase que utilice, vertiendo el agua de lavado al depósito (del pulverizador). Conforme a lo establecido en el Real Decreto 1416/2001, de 14 de diciembre, sobre envases de productos fitosanitarios, en la etiqueta deberá figurar la siguiente frase: Entregar los envases vacíos o resíduos de envases bien en los puntos de recogida establecidos por los sistemas colectivos de responsabilidad ampliada (SIG) o directamente en el punto de venta donde se hubiera adquirido si dichos envases se han puesto en el mercado a través de un sistema de depósito, devolución y retorno."
+    }
+}

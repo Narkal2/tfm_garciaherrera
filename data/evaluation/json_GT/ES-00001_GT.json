@@ -1,0 +1,99 @@
+{
+    "producto": {
+      "nombre_comercial": "DYNALI",
+      "numero_registro": "ES-00001",
+      "estado": "Vigente",
+      "fechas": {
+        "inscripcion": "26/02/2013",
+        "caducidad": "31/03/2025"
+      },
+      "titular": {
+        "nombre": "SYNGENTA ESPAÑA, S.A.",
+        "direccion": "C/ Ribera del Loira 8-10, 3ª planta",
+        "localidad": "Madrid",
+        "pais": "ESPAÑA",
+        "codigo_postal": "28042"
+      },
+      "fabricante": {
+        "nombre": "SYNGENTA CROP PROTECTION AG",
+        "direccion": "Rosentalstrasse 67",
+        "localidad": "Basilea",
+        "pais": "SUIZA",
+        "codigo_postal": "4058"
+      },
+      "composicion": [
+        { "ingrediente_activo": "CIFLUFENAMID", "concentracion": "3%", "forma": "[DC] P/V" },
+        { "ingrediente_activo": "DIFENOCONAZOL", "concentracion": "6%", "forma": "[DC] P/V" }
+      ],
+      "usos_y_dosis": [
+        {
+          "cultivo": "Vid",
+          "enfermedades": [
+            { "nombre": "Oidio de la vid", "agente": "Erysiphe necator" },
+            { "nombre": "Black rot", "agente": "Phyllosticta ampelicida" },
+            { "nombre": "Enfermedad de Brenner", "agente": "Pseudopeziza tracheiphila" }
+          ],
+          "dosis": "50-65 ml/Hl",
+          "condiciones": "Aplicar en pulverización normal foliar desde la aparición de la 3ª hoja hasta que el grano adquiera el color característico de la variedad."
+        }
+      ],
+      "condiciones_generales_uso": {
+        "max_aplicaciones": 2,
+        "volumen_caldo": "200-1000 l/Ha",
+        "intervalo_aplicaciones": "10 días",
+        "metodo_aplicacion": ["manual", "tractor"]
+      },
+      "plazos_seguridad": {
+        "cultivo": "Vid",
+        "dias": 21
+      },
+      "envases_disponibles": [
+        "Botella de polietileno de alta densidad: 250 ml, 500 ml, 1 L",
+        "Garrafas de polietileno: 5 L, 10 L"
+      ],
+      "clasificacion_etiquetado": {
+        "peligro_humana": {
+          "pictograma": null,
+          "advertencia": null,
+          "indicaciones": [
+            "R52/53: Nocivo para los organismos acuáticos, puede provocar a largo plazo efectos negativos en el medio ambiente acuático"
+          ],
+          "consejos_prudencia": [
+            "S13: Conservar separado de alimentos, bebidas y piensos",
+            "S45: En caso de accidente o malestar, acudir inmediatamente al médico con la etiqueta",
+            "S24/25: Evitar el contacto con los ojos y la piel",
+            "S2: Mantener fuera del alcance de los niños",
+            "S23: No respirar gases, humos, vapores o aerosoles"
+          ]
+        },
+        "peligro_ambiental": {
+          "pictograma": null,
+          "advertencia": null,
+          "indicaciones": [],
+          "consejos_prudencia": [
+            "SPe3: Respetar una banda de seguridad de 5 m hasta masas de agua superficial",
+            "SP1: No contaminar el agua con el producto o su envase"
+          ]
+        }
+      },
+      "mitigacion_riesgos": {
+        "manipulacion": [
+          "El aplicador deberá utilizar guantes en operaciones de mezcla y carga",
+          "No entrar al cultivo hasta que el producto esté seco"
+        ],
+        "ambientales": [
+          "Respetar una banda de seguridad de 5 m hasta masas de agua superficial",
+          "No contaminar el agua con el producto ni con su envase"
+        ]
+      },
+      "gestion_envases": [
+        "Enjuagar tres veces cada envase y verter aguas al depósito del pulverizador",
+        "Entregar los envases vacíos a un gestor autorizado o sistema integrado de gestión"
+      ],
+      "otras_indicaciones": [
+        "Seguir las instrucciones de uso para evitar riesgos a personas y medio ambiente",
+        "No limpiar equipos cerca de aguas superficiales"
+      ],
+      "clase_usuario": "Agricultores y aplicadores profesionales"
+    }
+}
