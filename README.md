@@ -49,3 +49,17 @@ Una vez terminada de usar, para apagar los servicios hay que utilizar el siguien
 Con los contenedores levantados, para acceder a la aplicación se debe ir a la URL del frontend:
 
 `http://localhost:8030`
+
+***
+
+## Videos de demostración de la aplicación
+
+### Extracción de información
+
+https://github.com/user-attachments/assets/d2257098-baf0-484e-9f2d-86a30246adfa
+
+### Asistente conversacional
+
+https://github.com/user-attachments/assets/dac16a4b-0765-4d25-ba45-36c1db827ae0
+
+
