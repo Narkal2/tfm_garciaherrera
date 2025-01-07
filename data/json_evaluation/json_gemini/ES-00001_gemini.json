@@ -1,0 +1,70 @@
+{
+    "Datos del Producto": {
+        "Número de Registro": "ES-00001",
+        "Estado": "Vigente",
+        "Fechas": {
+            "Inscripción": "26/02/2013",
+            "Renovación": null,
+            "Caducidad": "31/03/2025"
+        },
+        "Nombre Comercial": "DYNALI"
+    },
+    "Titular Fabricante": {
+        "Nombre": [
+            "SYNGENTA ESPAÑA, S.A.",
+            "SYNGENTA CROP PROTECTION AG"
+        ],
+        "Dirección": [
+            {
+                "Calle": "C/ Ribera del Loira 8-10, 3ª planta",
+                "Ciudad": "Madrid",
+                "Código Postal": "28042",
+                "País": "ESPAÑA"
+            },
+            {
+                "Calle": "Rosentalstrasse 67",
+                "Ciudad": "Basilea",
+                "Código Postal": "4058",
+                "País": "SUIZA"
+            }
+        ]
+    },
+    "Composición": "CIFLUFENAMID 3% + DIFENOCONAZOL 6% [DC] P/V",
+    "Envases": "Botella de polietileno de alta densidad de 250, 500 ml y 1 L. Garrafas de polietileno (HDPE, HDPE/PA, f-HDPE 0 PET) de 5 y 10.",
+    "Usos y Dosis Autorizados": [
+        {
+            "USO": "Black rot, podredumbre negra de la vid, Phyllosticta ampelicida Enfermedad de Brenner, enrojecimiento parasitario, Pseudopeziza tracheiphila Oidio de la vid, Erysiphe necator",
+            "AGENTE": "Vid",
+            "Dosis": "50 - 65 ml/Hl",
+            "Condic. Especifico": null
+        }
+    ],
+    "Plazos de Seguridad (Protección del Consumidor)": {
+        "Vid": "21"
+    },
+    "Condiciones Generales de Uso": "Aplicar en pulverización normal foliar, desde la aparición de la 3ª hoja hasta que el grano empieza a adquirir el color característico de la variedad mediante tractor o manualmente, con un máximo de 2 aplicaciones.",
+    "Clase de Usuario": "Uso reservado a agricultores y aplicadores profesionales.",
+    "Mitigación de riesgos en la manipulación": [
+        "El aplicador deberá utilizar guantes en las operaciones de mezcla y carga.",
+        "No entrar al cultivo hasta que el producto esté seco."
+    ],
+    "Clasificaciones y Etiquetado": {
+        "Humana": {
+            "Pictograma": null,
+            "Palabra de Advertencia": null,
+            "Indicaciones de Peligro": "R52/53 -Nocivo para los organismos acuáticos, puede provocar a largo plazo efectos negativos en el medio ambiente acuático",
+            "Consejos de Prudencia": "S13 -Conservar separado de alimentos, bebidas y piensos S45 -En caso de accidente o malestar, acúdase inmediatamente al médico, si es posible enseñándole esta etiqueta S24/25 -Evítese el contacto con los ojos y la piel S2 -Manténgase fuera del alcance de los niños. S23 -No respirar los gases/humos/vapores/aerosoles (denominación(es) adecuada(s) a especfificar por el fabricante.)"
+        },
+        "Medio Ambiental": {
+            "Pictograma": null,
+            "Palabra de Advertencia": null,
+            "Indicaciones de Peligro": null,
+            "Consejos de Prudencia": null
+        }
+    },
+    "Mitigación de riesgos ambientales": [
+        "SPe 3: Para proteger los organismos acuáticos, respétese sin tratar una banda de seguridad de 5 m hasta las masas de agua superficial.",
+        "SP 1: No contaminar el agua con el producto o su envase."
+    ],
+    "Gestión de Envases": "Es obligatorio enjuagar enérgicamente tres veces, o mediante dispositivo de presión, cada envase de producto que se vacíe al preparar la dilución y verter las aguas al depósito del pulverizador. Indicar en la etiqueta la obligación de entregar los envases vacíos a un gestor autorizado de residuos clasificados y peligrosos así como las opciones alternativas que el titular está obligado a ofrecer, conforme a lo establecido en el R.D. 1416/2001, de entregarlos directamente al sistema integrado de gestión al que esté adherido o al propio, de depósito, devolución y retorno, a través del punto de venta donde el usuario lo adquiera."
+}

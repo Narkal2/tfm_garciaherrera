@@ -1,0 +1,152 @@
+{
+    "producto": {
+      "nombre_comercial": "LIETO",
+      "numero_registro": "ES-00004",
+      "estado": "Vigente",
+      "fechas": {
+        "inscripcion": "31/10/2013",
+        "caducidad": "28/02/2025"
+      },
+      "titular": {
+        "nombre": "SIPCAM OXON S.p.A.",
+        "direccion": "Vía Sempione, 195",
+        "localidad": "Pero",
+        "pais": "ITALIA",
+        "codigo_postal": "20016"
+      },
+      "fabricante": {
+        "nombre": "SIPCAM OXON S.p.A.",
+        "direccion": "Vía Sempione, 195",
+        "localidad": "Pero",
+        "pais": "ITALIA",
+        "codigo_postal": "20016"
+      },
+      "composicion": [
+        { "ingrediente_activo": "CIMOXANILO", "concentracion": "33%", "forma": "[WG] P/P" },
+        { "ingrediente_activo": "ZOXAMIDA", "concentracion": "33%", "forma": "[WG] P/P" }
+      ],
+      "usos_y_dosis": [
+        {
+          "cultivo": "Berenjena",
+          "enfermedades": [
+            { "nombre": "Mildiu de la patata y el tomate", "agente": "Phytophthora infestans" }
+          ],
+          "dosis": "0,4 - 0,45 Kg/ha",
+          "numero_aplicaciones": 3,
+          "intervalo_dias": "7-10",
+          "volumen_caldo": "500-800 l/ha",
+          "condiciones": "Efectuar un máximo de 3 aplicaciones a intervalos de 7-10 días."
+        },
+        {
+          "cultivo": "Patata",
+          "enfermedades": [
+            { "nombre": "Mildiu de la patata y el tomate", "agente": "Phytophthora infestans" }
+          ],
+          "dosis": "0,45 Kg/ha",
+          "numero_aplicaciones": 3,
+          "intervalo_dias": "7",
+          "volumen_caldo": "200-1.000 l/ha",
+          "condiciones": "Efectuar un máximo de 3 aplicaciones por campaña."
+        },
+        {
+          "cultivo": "Tomate",
+          "enfermedades": [
+            { "nombre": "Mildiu de la patata y el tomate", "agente": "Phytophthora infestans" }
+          ],
+          "dosis": "0,4 - 0,45 Kg/ha",
+          "numero_aplicaciones": 3,
+          "intervalo_dias": "7-10",
+          "volumen_caldo": "500-800 l/ha",
+          "condiciones": "Efectuar un máximo de 3 aplicaciones a intervalos de 7-10 días."
+        },
+        {
+          "cultivo": "Vid",
+          "enfermedades": [
+            { "nombre": "Mildiu de la vid", "agente": "Plasmopara viticola" }
+          ],
+          "dosis": "0,4 Kg/ha",
+          "numero_aplicaciones": 3,
+          "intervalo_dias": "7",
+          "volumen_caldo": "200-1.000 l/ha",
+          "condiciones": "Aplicar en pulverización normal desde el estadio de 3 hojas desplegadas (BBCH 14)."
+        }
+      ],
+      "condiciones_generales_uso": {
+        "descripcion": "Aplicar en pulverización normal solo al aire libre con pulverizador hidráulico con tractor o manual.",
+        "numero_tratamientos": 3,
+        "detalles": "Se incluirá en la etiqueta información sobre la correcta aplicación del producto y fungicidas compatibles."
+      },
+      "plazos_seguridad": {
+        "cultivos": [
+          { "nombre": "Berenjena", "dias": 3 },
+          { "nombre": "Tomate", "dias": 3 },
+          { "nombre": "Patata", "dias": 7 },
+          { "nombre": "Vid", "dias": 28 }
+        ]
+      },
+      "envases_disponibles": [
+        "Bolsas de 1 Kg en cajas (10x1)",
+        "Bolsas de 250 g a 1 Kg en bobinas de PET+PET",
+        "Sacos de papel de 1 a 10 Kg",
+        "Bolsas PET/Al/PET de 200 g"
+      ],
+      "clasificacion_etiquetado": {
+        "peligro_humana": {
+          "categorias": [
+            "Sensibilización cutánea. Categoría 1 B",
+            "Toxicidad aguda (oral, cutánea, inhalación). Categoría 4",
+            "Toxicidad específica en determinados órganos tras exposiciones repetidas. Categoría 2",
+            "Tóxicos para la reproducción. Categoría 2"
+          ],
+          "pictogramas": ["GHS07 (signo de exclamación)", "GHS08 (peligro para la salud)"],
+          "advertencia": "Atención",
+          "indicaciones": [
+            "H302 - Nocivo en caso de ingestión.",
+            "H373 - Puede provocar daños en el tiroides y sistema nervioso tras exposiciones prolongadas.",
+            "H317 - Puede provocar una reacción alérgica en la piel.",
+            "H361 - Se sospecha que daña al feto."
+          ],
+          "consejos_prudencia": [
+            "P302+P352 - EN CASO DE CONTACTO CON LA PIEL: Lavar con abundante agua y jabón.",
+            "P262 - Evitar el contacto con los ojos, la piel o la ropa.",
+            "P405 - Guardar bajo llave.",
+            "P280 - Llevar guantes y prendas de protección."
+          ]
+        },
+        "peligro_ambiental": {
+          "categorias": ["Acuático agudo 1", "Acuático crónico 1"],
+          "pictogramas": ["GHS09 (medio ambiente)"],
+          "advertencia": "Atención",
+          "indicaciones": [
+            "H410 - Muy tóxico para los organismos acuáticos, con efectos duraderos."
+          ],
+          "consejos_prudencia": [
+            "P501 - Elimínense el contenido y/o su recipiente según normativa.",
+            "P273 - Evitar su liberación al medio ambiente.",
+            "P391 - Recoger el vertido."
+          ]
+        }
+      },
+      "mitigacion_riesgos": {
+        "manipulacion": [
+          "Utilizar guantes y ropa de protección en todas las fases de aplicación.",
+          "Evitar el contacto con el follaje húmedo durante la aplicación.",
+          "No entrar al cultivo hasta que el producto esté seco.",
+          "Lavar toda la ropa de protección después de usarla (SPo2)."
+        ],
+        "ambientales": [
+          "SPe 3: Respetar una banda de seguridad de 10-20 m dependiendo del cultivo para proteger los organismos acuáticos.",
+          "Aplicar hasta la aparición de los órganos florales (BBCH>50) para proteger mamíferos herbívoros."
+        ]
+      },
+      "gestion_envases": [
+        "Entregar los envases vacíos en puntos de recogida SIG o al punto de venta."
+      ],
+      "otras_indicaciones": [
+        "EUH 401: A fin de evitar riesgos para las personas y el medio ambiente, siga las instrucciones de uso.",
+        "SP1: No contaminar el agua con el producto ni con su envase."
+      ],
+      "clase_usuario": "Uso profesional"
+    }
+  }
+  

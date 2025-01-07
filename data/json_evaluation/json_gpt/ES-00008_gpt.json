@@ -1,0 +1,120 @@
+{
+    "producto": {
+        "numeroRegistro": "ES-00008",
+        "estado": "Vigente",
+        "fechas": {
+            "inscripcion": "08/10/2014",
+            "renovacion": null,
+            "caducidad": "31/03/2027"
+        },
+        "nombreComercial": "TALENDO EXTRA",
+        "titularFabricante": {
+            "nombre": "CORTEVA AGRISCIENCE SPAIN, S.L.U.",
+            "ubicacion": {
+                "direccion": "Campus Tecnológico Corteva Agriscience. Carretera de Sevilla-Cazalla (C-433) km 4,6",
+                "codigoPostal": "41309",
+                "localidad": "La Rinconada",
+                "provincia": "Sevilla",
+                "pais": "España"
+            }
+        },
+        "composicion": "PROQUINAZID 16% + TETRACONAZOL 8% [EC] P/V",
+        "envases": [
+            "Botellas de polietileno (HDPE) de 0,25, 0,5 y 1 l.",
+            "Garrafa de polietileno (HDPE) de 5 l."
+        ],
+        "usosYDosisAutorizados": [
+            {
+                "uso": "Oidio de la vid, Erysiphe necator",
+                "dosis": "0,217 l/ha",
+                "numeroAplicaciones": 3,
+                "intervalos": "10-14",
+                "volumenCaldo": "300-1.000 l/ha",
+                "condicionesEspecificas": "Aplicar desde que las inflorescencias están hinchándose hasta que todas las bayas de un racimo se tocan."
+            }
+        ],
+        "plazosDeSeguridad": {
+            "uso": "Vid",
+            "plazoSeguridadDias": 30
+        },
+        "claseDeUsuario": "Uso reservado a agricultores y aplicadores profesionales.",
+        "mitigacionRiesgosManipulacion": {
+            "recomendaciones": [
+                "El aplicador deberá utilizar guantes en la mezcla/carga, aplicación y al manipular el equipo de aplicación o superficies contaminadas.",
+                "Se utilizará ropa tipo 6: contra salpicaduras de productos líquidos en las aplicaciones manuales y en cultivo alto en aplicaciones con tractor.",
+                "El tractor irá equipado de cabina cerrada y boquillas de baja deriva, en caso contrario el operario deberá utilizar ropa tipo 6.",
+                "Durante la limpieza del equipo se utilizará la misma protección que durante la aplicación.",
+                "No entrar al cultivo hasta que el producto esté seco."
+            ],
+            "plazosReentrada": [
+                {
+                    "numeroAplicaciones": 3,
+                    "intervaloDias": 10,
+                    "plazoReentradaDias": 22
+                },
+                {
+                    "numeroAplicaciones": 3,
+                    "intervaloDias": 14,
+                    "plazoReentradaDias": 18
+                },
+                {
+                    "numeroAplicaciones": 2,
+                    "intervaloDias": 10,
+                    "plazoReentradaDias": 9
+                }
+            ]
+        },
+        "clasificacionesYEtiquetado": {
+            "humana": {
+                "claseYCategoria": [
+                    "Carcinogenicidad. Categoría 2.",
+                    "Irritación ocular. Categoría 2."
+                ],
+                "pictogramas": [
+                    "GHS07 (signo de exclamación)",
+                    "GHS08 (peligro para la salud)"
+                ],
+                "palabraAdvertencia": "Atención",
+                "indicacionesPeligro": [
+                    "EUH 401 - A fin de evitar riesgos para las personas y el medio ambiente, siga las instrucciones de uso.",
+                    "EUH 066 - La exposición repetida puede provocar sequedad o formación de grietas en la piel.",
+                    "H319 - Provoca irritación ocular grave.",
+                    "H351 - Se sospecha que provoca cáncer."
+                ],
+                "consejosPrudencia": [
+                    "P305+P351+P338 - EN CASO DE CONTACTO CON LOS OJOS: Enjuagar con agua cuidadosamente durante varios minutos. Quitar las lentes de contacto cuando estén presentes y pueda hacerse con facilidad. Proseguir con el lavado.",
+                    "P261 - Evitar respirar el polvo/el humo/el gas/la niebla /los vapores/el aerosol.",
+                    "P405 - Guardar bajo llave.",
+                    "P280 - Llevar guantes, prendas y mascarilla de protección.",
+                    "P202 - No manipular la sustancia antes de haber leído y comprendido todas las instrucciones de seguridad.",
+                    "P201 - Solicitar instrucciones especiales antes del uso."
+                ]
+            },
+            "medioAmbiental": {
+                "claseYCategoria": "Acuático crónico 1",
+                "pictograma": "GHS09 (medio ambiente)",
+                "palabraAdvertencia": "Atención",
+                "indicacionesPeligro": [
+                    "H410 - Muy tóxico para los organismos acuáticos, con efectos duraderos."
+                ],
+                "consejosPrudencia": [
+                    "P501 - Elimínense el contenido y/o su recipiente de acuerdo con la normativa sobre residuos peligrosos.",
+                    "P273 - Evitar su liberación al medio ambiente.",
+                    "P391 - Recoger el vertido."
+                ]
+            }
+        },
+        "mitigacionRiesgosAmbientales": {
+            "recomendaciones": [
+                "Para proteger los organismos acuáticos, respétese sin tratar una banda de seguridad de 14 m. hasta las masas de agua superficial.",
+                "Para proteger los artrópodos no objetivo, no superar la dosis de 217,4 ml/Ha."
+            ]
+        },
+        "gestionEnvases": {
+            "recomendaciones": [
+                "Enjuague enérgicamente tres veces cada envase que utilice, vertiendo el agua de lavado al depósito (del pulverizador).",
+                "Conforme a lo establecido en el Real Decreto 1416/2001, de 14 de diciembre, sobre envases de productos fitosanitarios, en la etiqueta deberá figurar la siguiente frase: Entregar los envases vacíos o residuos de envases bien en los puntos de recogida establecidos por los sistemas colectivos de responsabilidad ampliada (SIG) o directamente en el punto de venta donde se hubiera adquirido si dichos envases se han puesto en el mercado a través de un sistema de depósito, devolución y retorno."
+            ]
+        }
+    }
+}

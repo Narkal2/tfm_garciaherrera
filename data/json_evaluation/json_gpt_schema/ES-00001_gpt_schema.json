@@ -1,0 +1,118 @@
+{
+    "producto": {
+        "nombre_comercial": "DYNALI",
+        "numero_registro": "ES-00001",
+        "estado": "Vigente",
+        "fechas": {
+            "inscripcion": "26/02/2013",
+            "caducidad": "31/03/2025"
+        },
+        "titular": {
+            "nombre": "SYNGENTA ESPAÑA, S.A.",
+            "direccion": "C/ Ribera del Loira 8-10, 3ª planta",
+            "localidad": "Madrid",
+            "pais": "ESPAÑA",
+            "codigo_postal": "28042"
+        },
+        "fabricante": {
+            "nombre": "SYNGENTA CROP PROTECTION AG",
+            "direccion": "Rosentalstrasse 67",
+            "localidad": "Basilea",
+            "pais": "SUIZA",
+            "codigo_postal": "4058"
+        },
+        "composicion": [
+            {
+                "ingrediente_activo": "CIFLUFENAMID",
+                "concentracion": "3%",
+                "forma": "[DC] P/V"
+            },
+            {
+                "ingrediente_activo": "DIFENOCONAZOL",
+                "concentracion": "6%",
+                "forma": "[DC] P/V"
+            }
+        ],
+        "usos_y_dosis": [
+            {
+                "cultivo": "Vid",
+                "enfermedades": [
+                    {
+                        "nombre": "Black rot, podredumbre negra de la vid",
+                        "agente": "Phyllosticta ampelicida"
+                    },
+                    {
+                        "nombre": "Enfermedad de Brenner, enrojecimiento parasitario",
+                        "agente": "Pseudopeziza tracheiphila"
+                    },
+                    {
+                        "nombre": "Oidio de la vid",
+                        "agente": "Erysiphe necator"
+                    }
+                ],
+                "dosis": "50 - 65 ml/Hl",
+                "condiciones": ""
+            }
+        ],
+        "condiciones_generales_uso": {
+            "max_aplicaciones": 2,
+            "volumen_caldo": "200 - 1000 l/H",
+            "intervalo_aplicaciones": "10 días",
+            "metodo_aplicacion": [
+                "pulverización normal foliar"
+            ]
+        },
+        "plazos_seguridad": {
+            "cultivo": "Vid",
+            "dias": 21
+        },
+        "envases_disponibles": [
+            "Botella de polietileno de alta densidad de 250 ml",
+            "Botella de polietileno de alta densidad de 500 ml",
+            "Botella de polietileno de alta densidad de 1 L",
+            "Garrafas de polietileno (HDPE, HDPE/PA, f-HDPE 0 PET) de 5 L",
+            "Garrafas de polietileno (HDPE, HDPE/PA, f-HDPE 0 PET) de 10 L"
+        ],
+        "clasificacion_etiquetado": {
+            "peligro_humana": {
+                "pictograma": "",
+                "advertencia": "",
+                "indicaciones": [
+                    "R52/53 -Nocivo para los organismos acuáticos, puede provocar a largo plazo efectos negativos en el medio ambiente acuático",
+                    "S13 -Conservar separado de alimentos, bebidas y piensos",
+                    "S45 -En caso de accidente o malestar, acúdase inmediatamente al médico, si es posible enseñándole esta etiqueta"
+                ],
+                "consejos_prudencia": [
+                    "S24/25 -Evítese el contacto con los ojos y la piel",
+                    "S2 -Manténgase fuera del alcance de los niños.",
+                    "S23 -No respirar los gases/humos/vapores/aerosoles (denominación(es) adecuada(s) a especificar por el fabricante."
+                ]
+            },
+            "peligro_ambiental": {
+                "pictograma": "",
+                "advertencia": "",
+                "indicaciones": [],
+                "consejos_prudencia": [
+                    "SPe 3: Para proteger los organismos acuáticos, respétese sin tratar una banda de seguridad de 5 m hasta las masas de agua superficial.",
+                    "SP 1: No contaminar el agua con el producto o su envase."
+                ]
+            }
+        },
+        "mitigacion_riesgos": {
+            "manipulacion": [
+                "El aplicador deberá utilizar guantes en las operaciones de mezcla y carga.",
+                "No entrar al cultivo hasta que el producto esté seco."
+            ],
+            "ambientales": [
+                "Para proteger los organismos acuáticos, respétese sin tratar una banda de seguridad de 5 m hasta las masas de agua superficial.",
+                "No contaminar el agua con el producto o su envase."
+            ]
+        },
+        "gestion_envases": [
+            "Es obligatorio enjuagar enérgicamente tres veces, o mediante dispositivo de presión, cada envase de producto que se vacíe al preparar la dilución y verter las aguas al depósito del pulverizador.",
+            "Indicar en la etiqueta la obligación de entregar los envases vacíos a un gestor autorizado de residuos clasificados y peligrosos."
+        ],
+        "otras_indicaciones": [],
+        "clase_usuario": "Uso reservado a agricultores y aplicadores profesionales."
+    }
+}

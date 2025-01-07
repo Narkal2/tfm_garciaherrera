@@ -1,0 +1,117 @@
+{
+    "producto": {
+        "registro": "ES-00005",
+        "estado": "Cancelado",
+        "fechas": {
+            "inscripcion": "09/02/2015",
+            "renovacion": null,
+            "cancelacion": "21/06/2017",
+            "limiteVenta": "21/12/2017"
+        },
+        "nombreComercial": "APPLAUD 25 WP"
+    },
+    "titularFabricante": [
+        "NICHINO EUROPE CO., LTD",
+        "NIHON NOHYAKU CO. LTD. (JAPON)"
+    ],
+    "direccionesFabricante": [
+        {
+            "direccion": "5 Pioneer Court, Vision Park",
+            "cp": "CB24 9PT",
+            "ciudad": "Histon",
+            "pais": "REINO UNIDO"
+        },
+        {
+            "direccion": "nº 19-8 kyobashi 1-chome, 104-8386 ChuoKu",
+            "cp": null,
+            "ciudad": "Tokyo",
+            "pais": "JAPÓN"
+        }
+    ],
+    "composicion": {
+        "principioActivo": "BUPROFEZIN 25% [WP] P/P"
+    },
+    "envases": "Bolsas de polietileno de baja densidad de 0,05 a 10 Kg",
+    "usosDosis": [
+        {
+            "cultivo": "Frutales de pepita",
+            "plaga": "PIOJO DE SAN JOSE",
+            "dosis": "0,1 - 0,125 Kg/Hl",
+            "numAplicaciones": 1,
+            "volumenCaldo": "1.000-1.600 l/Ha",
+            "dosisMaxima": "1,6 kg/Ha",
+            "aplicacion": "Aplicar desde el final de la floración hasta el comienzo de la maduración de los frutos con un máx de"
+        },
+        {
+            "cultivo": "Olivo",
+            "plaga": "SAISSETIA",
+            "dosis": "0,1 Kg/Hl",
+            "numAplicaciones": 1,
+            "volumenCaldo": "1.000-2.000 l/Ha",
+            "dosisMaxima": "2 Kg/Ha",
+            "aplicacion": "Aplicar desde que el fruto alcanza el 50%, hasta el comienzo de coloración de los frutos con un máximo de"
+        },
+        {
+            "cultivo": "Platanera",
+            "plaga": "MOSCA BLANCA",
+            "dosis": "0,04 - 0,08 Kg/Hl",
+            "numAplicaciones": 1,
+            "volumenCaldo": "1.500-3.000 l/Ha",
+            "dosisMaxima": "1,6 Kg/Ha",
+            "aplicacion": "Aplicar desde la emergencia de la 1ª hoja hasta que los frutos muestran coloración parda con un máximo de"
+        }
+    ],
+    "plazosSeguridad": {
+        "platanera": 7,
+        "frutalesPepita": 14,
+        "olivo": 45
+    },
+    "condicionesUso": "Aplicar en pulverización foliar normal mediante tractor.En la etiqueta se darán las indicaciones oportunas para el correcto uso del producto.",
+    "claseUsuario": "Uso reservado a agricultores y aplicadores profesionales.",
+    "mitigacionRiesgosManipulacion": {
+        "equiposProteccion": "El aplicador deberá utilizar guantes en la mezcla/carga, aplicación, al manipular el equipo de aplicación o superficies contaminadas, además en la mezcla/carga deberá utilizar mascarilla de protección respiratoria FFP2 y durante la aplicación utilizará ropa tipo 4: hermética a productos líquidos.",
+        "plazoReentrada": {
+            "olivar": 15,
+            "frutalesPlatanera": 5
+        },
+        "lavadoRopa": "Lávese toda la ropa de protección después de usarla."
+    },
+    "clasificacionesEtiquetado": {
+        "humano": {
+            "claseCategoria": "Sensibilización cutánea. Categoría 1.",
+            "pictograma": "GHS07 (signo de exclamación)",
+            "palabraAdvertencia": "Atención",
+            "indicacionesPeligro": [
+                "EUH 401 -A fin de evitar riesgos para las personas y el medio ambiente, siga las instrucciones de uso.",
+                "H317 -Puede provocar una reacción alérgica en la piel."
+            ],
+            "consejosPrudencia": [
+                "P302+P352 -EN CASO DE CONTACTO CON LA PIEL: Lavar con abundante agua y jabón.",
+                "P333+P313 -En caso de irritación o erupción cutánea: Consultar a un médico.",
+                "P261 -Evitar respirar el polvo/el humo/el gas/la niebla /los vapores/el aerosol.",
+                "P272 -Las prendas de trabajo contaminadas no podrán sacarse del lugar de trabajo.",
+                "P280 -Llevar guantes, prendas y mascarilla de protección.",
+                "P362 -Quitarse las prendas contaminadas y lavarlas antes de volver a usarlas."
+            ]
+        },
+        "ambiental": {
+            "claseCategoria": "Acuático crónico 1",
+            "pictograma": "GHS09 (medio ambiente)",
+            "palabraAdvertencia": "Atención",
+            "indicacionesPeligro": "H410 -Muy tóxico para los organismos acuáticos, con efectos duraderos.",
+            "consejosPrudencia": [
+                "P501 -Elimínense el contenido y/o su recipiente de acuerdo con la normativa sobre residuos peligrosos.",
+                "P273 -Evitar su liberación al medio ambiente.",
+                "P391 -Recoger el vertido."
+            ]
+        }
+    },
+    "mitigacionRiesgosAmbientales": {
+        "bandaSeguridad": {
+            "platanera": 18,
+            "frutalesPepitaOlivo": 16
+        },
+        "unidadMedida": "m"
+    },
+    "gestionEnvases": "Conforme a lo establecido en el Real Decreto 1416/2001, de 14 de diciembre, sobre envases de productos fitosanitarios, en la etiqueta deberá figurar la siguiente frase: Entregar los envases vacíos o resíduos de envases bien en los puntos de recogida establecidos por los sistemas colectivos de responsabilidad ampliada (SIG) o directamente en el punto de venta donde se hubiera adquirido si dichos envases se han puesto en el mercado a través de un sistema de depósito, devolución y retorno."
+}

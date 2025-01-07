@@ -1,0 +1,97 @@
+{
+    "datos_del_producto": {
+        "numero_de_registro": "ES-00008",
+        "estado": "Vigente",
+        "fechas": {
+            "inscripcion": "08/10/2014",
+            "renovacion": null,
+            "caducidad": "31/03/2027"
+        },
+        "nombre_comercial": "TALENDO EXTRA"
+    },
+    "titular_fabricante": {
+        "nombre": "CORTEVA AGRISCIENCE SPAIN, S.L.U.",
+        "direccion": "Campus Tecnológico Corteva Agriscience. Carretera de Sevilla-Cazalla (C-433) km 4,6",
+        "codigo_postal": "41309",
+        "ciudad": "La Rinconada",
+        "provincia": "Sevilla",
+        "pais": "ESPAÑA"
+    },
+    "composicion": {
+        "descripcion": "PROQUINAZID 16% + TETRACONAZOL 8% [EC] P/V"
+    },
+    "envases": {
+        "descripcion": "Botellas de polietileno (HDPE) de 0,25, 0,5 y 1 l. Garrafa de polietileno (HDPE) de 5 l."
+    },
+    "usos_y_dosis_autorizados": [
+        {
+            "uso": "Oidio de la vid, Erysiphe",
+            "agente": "Vid",
+            "dosis": "0,217 l/ha",
+            "numero_aplicaciones": 3,
+            "intervalos": "10-14",
+            "volumen_caldo": "300-1.000 l/ha",
+            "condicion_especifico": "Aplicar desde que las inflorescencias están hinchándose hasta que todas las bayas de un racimo se tocan."
+        }
+    ],
+    "plazos_de_seguridad": [
+        {
+            "uso": "Vid",
+            "plazo_seguridad": 30
+        }
+    ],
+    "clase_de_usuario": "Uso reservado a agricultores y aplicadores profesionales.",
+    "mitigacion_de_riesgos_en_la_manipulacion": {
+        "descripcion": "El aplicador deberá utilizar guantes en la mezcla/carga, aplicación y al manipular el equipo de aplicación o superficies contaminadas. Se utilizará ropa tipo 6: contra salpicaduras de productos líquidos en las aplicaciones manuales y en cultivo alto en aplicaciones con tractor.",
+        "plazos_reentrada": [
+            {
+                "numero_aplicaciones": 3,
+                "intervalo_dias": 10,
+                "plazo_reentrada": 22
+            },
+            {
+                "numero_aplicaciones": 3,
+                "intervalo_dias": 14,
+                "plazo_reentrada": 18
+            },
+            {
+                "numero_aplicaciones": 2,
+                "intervalo_dias": 10,
+                "plazo_reentrada": 9
+            }
+        ]
+    },
+    "clasificaciones_y_etiquetado": {
+        "clase_y_categoria_de_peligro_humana": "Carcinogenicidad. Categoría 2. Irritación ocular. Categoría 2.",
+        "pictograma": "GHS07 (signo de exclamación) GHS08 (peligro para la salud)",
+        "palabra_de_advertencia": "Atención",
+        "indicaciones_de_peligro": [
+            "EUH 401 - A fin de evitar riesgos para las personas y el medio ambiente, siga las instrucciones de uso.",
+            "EUH 066 - La exposición repetida puede provocar sequedad o formación de grietas en la piel.",
+            "H319 - Provoca irritación ocular grave.",
+            "H351 - Se sospecha que provoca cáncer."
+        ],
+        "consejos_de_prudencia": [
+            "P305+P351+P338 - EN CASO DE CONTACTO CON LOS OJOS: Enjuagar con agua cuidadosamente durante varios minutos. Quitar las lentes de contacto cuando estén presentes y pueda hacerse con facilidad. Proseguir con el lavado.",
+            "P261 - Evitar respirar el polvo/el humo/el gas/la niebla /los vapores/el aerosol.",
+            "P405 - Guardar bajo llave.",
+            "P280 - Llevar guantes, prendas y mascarilla de protección.",
+            "P202 - No manipular la sustancia antes de haber leído y comprendido todas las instrucciones de seguridad.",
+            "P201 - Solicitar instrucciones especiales antes del uso"
+        ],
+        "clase_y_categoria_de_peligro_medio_ambiental": "Acuático crónico 1",
+        "pictograma_medio_ambiental": "GHS09 (medio ambiente)",
+        "indicaciones_de_peligro_medio_ambiental": "H410 - Muy tóxico para los organismos acuáticos, con efectos duraderos.",
+        "consejos_de_prudencia_medio_ambiental": [
+            "P501 - Elimínense el contenido y/o su recipiente de acuerdo con la normativa sobre residuos peligrosos.",
+            "P273 - Evitar su liberación al medio ambiente.",
+            "P391 - Recoger el vertido."
+        ]
+    },
+    "mitigacion_de_riesgos_ambientales": {
+        "descripcion": "Para proteger los organismos acuáticos, respétese sin tratar una banda de seguridad de 14 m. hasta las masas de agua superficial. Para proteger los artrópodos no objetivo, no superar la dosis de 217,4 ml/Ha."
+    },
+    "gestion_de_envases": {
+        "descripcion": "Enjuague enérgicamente tres veces cada envase que utilice, vertiendo el agua de lavado al depósito (del pulverizador). Conforme a lo establecido en el Real Decreto 1416/2001, de 14 de diciembre, sobre envases de productos fitosanitarios, en la etiqueta deberá figurar la siguiente frase: Entregar los envases vacíos o resíduos de envases bien en los puntos de recogida establecidos por los sistemas colectivos de responsabilidad ampliada (SIG) o directamente en el punto de venta donde se hubiera adquirido si dichos envases se han puesto en el mercado a través de un sistema de depósito, devolución y retorno."
+    }
+}

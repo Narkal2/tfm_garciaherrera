@@ -1,0 +1,110 @@
+{
+    "producto": {
+        "numeroRegistro": "ES-00002",
+        "estado": "Cancelado",
+        "fechas": {
+            "inscripcion": "10/01/2014",
+            "renovacion": null,
+            "cancelacion": "12/08/2023",
+            "limiteVenta": "31/12/2023"
+        },
+        "nombreComercial": "NEOFLAN",
+        "titularFabricante": {
+            "nombre": "GOWAN CROP PROTECTION LTD.",
+            "direccion": {
+                "calle": "Rothamsted Research, West Common",
+                "ciudad": "Harpenden",
+                "codigoPostal": "AL5 2JQ",
+                "provincia": "Hertfordshire",
+                "pais": "REINO UNIDO"
+            }
+        },
+        "composicion": [
+            {
+                "sustancia": "BENFLURALINA",
+                "concentracion": "60%",
+                "unidad": "WG P/P"
+            }
+        ],
+        "envases": [
+            {
+                "tipo": "Bolsa de plástico",
+                "tamaños": [
+                    "250 g",
+                    "1 kg",
+                    "5 kg"
+                ]
+            },
+            {
+                "tipo": "Saco de plástico",
+                "tamaños": [
+                    "10 kg",
+                    "20 kg"
+                ]
+            }
+        ],
+        "usosYDosisAutorizados": [
+            {
+                "uso": "Dicotiledóneas anuales",
+                "agente": "Algodonero",
+                "monocotiledoneas": "Monocotiledóneas anuales",
+                "dosis": "2,5 Kg/ha",
+                "numeroAplicaciones": 1,
+                "intervalos": "-",
+                "volumenCaldo": "200 - 400 l/ha",
+                "condicionesEspecificas": "Aplicar en presiembra del cultivo."
+            },
+            {
+                "uso": "Dicotiledóneas anuales",
+                "agente": "Girasol",
+                "monocotiledoneas": "Monocotiledóneas anuales",
+                "dosis": "2,5 Kg/ha",
+                "numeroAplicaciones": 1,
+                "intervalos": "-",
+                "volumenCaldo": "200 - 400 l/ha",
+                "condicionesEspecificas": "Aplicar en presiembra del cultivo."
+            }
+        ],
+        "plazosDeSeguridad": [
+            {
+                "uso": "Algodonero, Girasol",
+                "plazoSeguridadDias": "NO PROCEDE"
+            }
+        ],
+        "clasificacionesYEtiquetado": {
+            "peligroHumano": {
+                "claseYCategoria": "Carcinogenicidad. Categoría 2. Sensibilización cutánea. Categoría 1.",
+                "pictograma": [
+                    "GHS07 (signo de exclamación)",
+                    "GHS08 (peligro para la salud)"
+                ],
+                "palabraAdvertencia": "Atención",
+                "indicacionesPeligro": [
+                    "H317 - Puede provocar una reacción alérgica en la piel.",
+                    "H351 - Se sospecha que provoca cáncer."
+                ],
+                "consejosPrudencia": [
+                    "P302+P352 - EN CASO DE CONTACTO CON LA PIEL: Lavar con abundante agua y jabón.",
+                    "P261 - Evitar respirar el polvo/el humo/el gas/la niebla /los vapores/el aerosol.",
+                    "P280 - Llevar guantes, prendas y mascarilla de protección.",
+                    "P202 - No manipular la sustancia antes de haber leído y comprendido todas las instrucciones de seguridad.",
+                    "P201 - Solicitar instrucciones especiales antes del uso"
+                ]
+            },
+            "peligroMedioAmbiental": {
+                "claseYCategoria": "Acuático agudo 1 Acuático crónico 1",
+                "pictograma": "GHS09 (medio ambiente)",
+                "indicacionesPeligro": [
+                    "H410 - Muy tóxico para los organismos acuáticos, con efectos duraderos."
+                ],
+                "consejosPrudencia": [
+                    "P501 - Elimínense el contenido y/o su recipiente de acuerdo con la normativa sobre residuos peligrosos.",
+                    "P273 - Evitar su liberación al medio ambiente.",
+                    "P391 - Recoger el vertido."
+                ]
+            }
+        },
+        "eliminacionProducto": "SP1: NO CONTAMINAR EL AGUA CON EL PRODUCTO NI CON SU ENVASE. (No limpiar el equipo de aplicación del producto cerca de aguas superficiales/Evítese la contaminación a través de los sistemas de evacuación de aguas de las explotaciones o de los caminos).",
+        "gestionEnvases": "Enjuague enérgicamente tres veces cada envase que utilice, vertiendo el agua de lavado al depósito (del pulverizador). Conforme a lo establecido en el Real Decreto 1416/2001, de 14 de diciembre, sobre envases de productos fitosanitarios, en la etiqueta deberá figurar la siguiente frase: Entregar los envases vacíos o residuos de envases bien en los puntos de recogida establecidos por los sistemas colectivos de responsabilidad ampliada (SIG) o directamente en el punto de venta donde se hubiera adquirido si dichos envases se han puesto en el mercado a través de un sistema de depósito, devolución y retorno."
+    }
+}

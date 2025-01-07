@@ -1,0 +1,117 @@
+{
+    "producto": {
+        "nombre_comercial": "NEOFLAN",
+        "numero_registro": "ES-00002",
+        "estado": "Cancelado",
+        "fechas": {
+            "inscripcion": "10/01/2014",
+            "caducidad": "12/08/2023"
+        },
+        "titular": {
+            "nombre": "GOWAN CROP PROTECTION LTD.",
+            "direccion": "Rothamsted Research, West Common, Harpenden",
+            "localidad": "Hertfordshire",
+            "pais": "REINO UNIDO",
+            "codigo_postal": "AL5 2JQ"
+        },
+        "fabricante": {
+            "nombre": "GOWAN CROP PROTECTION LTD.",
+            "direccion": "Rothamsted Research, West Common, Harpenden",
+            "localidad": "Hertfordshire",
+            "pais": "REINO UNIDO",
+            "codigo_postal": "AL5 2JQ"
+        },
+        "composicion": [
+            {
+                "ingrediente_activo": "BENFLURALINA",
+                "concentracion": "60%",
+                "forma": "WG"
+            }
+        ],
+        "usos_y_dosis": [
+            {
+                "cultivo": "Algodonero",
+                "enfermedades": [
+                    {
+                        "nombre": "Dicotiledóneas anuales",
+                        "agente": "Monocotiledóneas anuales"
+                    }
+                ],
+                "dosis": "2,5 Kg/ha",
+                "condiciones": "Aplicar en presiembra del cultivo."
+            },
+            {
+                "cultivo": "Girasol",
+                "enfermedades": [
+                    {
+                        "nombre": "Dicotiledóneas anuales",
+                        "agente": "Monocotiledóneas anuales"
+                    }
+                ],
+                "dosis": "2,5 Kg/ha",
+                "condiciones": "Aplicar en presiembra del cultivo."
+            }
+        ],
+        "condiciones_generales_uso": {
+            "max_aplicaciones": 1,
+            "volumen_caldo": "200 - 400 l/ha",
+            "intervalo_aplicaciones": "",
+            "metodo_aplicacion": [
+                "Otros (ver condic.)"
+            ]
+        },
+        "plazos_seguridad": {
+            "cultivo": "Algodonero, Girasol",
+            "dias": 0
+        },
+        "envases_disponibles": [
+            "Bolsas de plástico de 250 g",
+            "Bolsas de plástico de 1 kg",
+            "Bolsas de plástico de 5 kg",
+            "Sacos de plástico de 10 kg",
+            "Sacos de plástico de 20 kg"
+        ],
+        "clasificacion_etiquetado": {
+            "peligro_humana": {
+                "pictograma": "GHS07 (signo de exclamación) GHS08 (peligro para la salud)",
+                "advertencia": "Atención",
+                "indicaciones": [
+                    "H317 - Puede provocar una reacción alérgica en la piel.",
+                    "H351 - Se sospecha que provoca cáncer."
+                ],
+                "consejos_prudencia": [
+                    "P302+P352 - EN CASO DE CONTACTO CON LA PIEL: Lavar con abundante agua y jabón.",
+                    "P261 - Evitar respirar el polvo/el humo/el gas/la niebla /los vapores/el aerosol.",
+                    "P280 - Llevar guantes, prendas y mascarilla de protección.",
+                    "P202 - No manipular la sustancia antes de haber leído y comprendido todas las instrucciones de seguridad.",
+                    "P201 - Solicitar instrucciones especiales antes del uso"
+                ]
+            },
+            "peligro_ambiental": {
+                "pictograma": "GHS09 (medio ambiente)",
+                "advertencia": "",
+                "indicaciones": [],
+                "consejos_prudencia": [
+                    "P501 - Elimínense el contenido y/o su recipiente de acuerdo con la normativa sobre residuos peligrosos.",
+                    "P273 - Evitar su liberación al medio ambiente.",
+                    "P391 - Recoger el vertido."
+                ]
+            }
+        },
+        "mitigacion_riesgos": {
+            "manipulacion": [
+                "NO CONTAMINAR EL AGUA CON EL PRODUCTO NI CON SU ENVASE."
+            ],
+            "ambientales": [
+                "No limpiar el equipo de aplicación del producto cerca de aguas superficiales.",
+                "Evítese la contaminación a través de los sistemas de evacuación de aguas de las explotaciones o de los caminos."
+            ]
+        },
+        "gestion_envases": [
+            "Enjuague enérgicamente tres veces cada envase que utilice, vertiendo el agua de lavado al depósito (del pulverizador).",
+            "Entregar los envases vacíos o residuos de envases bien en los puntos de recogida establecidos por los sistemas colectivos de responsabilidad ampliada (SIG) o directamente en el punto de venta donde se hubiera adquirido si dichos envases se han puesto en el mercado a través de un sistema de depósito, devolución y retorno."
+        ],
+        "otras_indicaciones": [],
+        "clase_usuario": "Profesional"
+    }
+}

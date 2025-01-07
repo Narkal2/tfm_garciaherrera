@@ -63,3 +63,71 @@ https://github.com/user-attachments/assets/d2257098-baf0-484e-9f2d-86a30246adfa
 https://github.com/user-attachments/assets/dac16a4b-0765-4d25-ba45-36c1db827ae0
 
 
+***
+
+── Narkal2-tfm_garciaherrera/
+    ├── README.md
+    ├── LICENSE
+    ├── docker-compose.yml
+    ├── requirements.txt
+
+    
+    ├── scripts/
+    │   ├── json_evaluation.py
+    │   └── json_extraction_batch.py
+    └── services/
+        ├── backend/
+        │   ├── Dockerfile
+        │   ├── requirements.txt
+        │   └── src/
+        │       ├── main.py
+        │       └── modules/
+        │           ├── assistant.py
+        │           ├── indexer_redis.py
+        │           └── info_extraction.py
+        ├── frontend/
+        │   ├── Dockerfile
+        │   ├── requirements.txt
+        │   ├── images/
+        │   ├── src/
+        │   │   └── main.py
+        │   └── .streamlit/
+        │       └── config.toml
+        └── redis/
+            └── docker-compose-redis.yml
+        ├── data/
+    │   ├── evaluation/
+    │   │   ├── fitosanitario_schema.json
+    │   │   ├── json_GT/
+    │   │   │   ├── ES-00001_GT.json
+    |   |   │   |   ···
+    │   │   │   └── ES-00010_GT.json
+    │   │   ├── json_gemini/
+    │   │   │   ├── ES-00001_gemini.json
+    |   |   │   |   ···
+    │   │   │   └── ES-00010_gemini.json
+    │   │   ├── json_gemini_schema/
+    │   │   │   ├── ES-00001_gemini_schema.json
+    |   |   │   |   ···
+    │   │   │   └── ES-00010_gemini_schema.json
+    │   │   ├── json_gpt/
+    │   │   │   ├── ES-00001_gpt.json
+    |   |   │   |   ···
+    │   │   │   └── ES-00010_gpt.json
+    │   │   ├── json_gpt_schema/
+    │   │   │   ├── ES-00001_gpt_schema.json
+    |   |   │   |   ···
+    │   │   │   └── ES-00010_gpt_schema.json
+    │   │   ├── json_llama/
+    │   │   │   ├── ES-00001_llama.json
+    |   |   │   |   ···
+    │   │   │   └── ES-00010_llama.json
+    │   │   └── json_llama_schema/
+    │   │       ├── ES-00001_llama_schema.json
+    |   |       |   ···
+    │   │       └── ES-00010_llama_schema.json
+    │   ├── pdf_fitosanitario/
+    │   └── results/
+    │       └── results.csv
+    └── notebooks/
+        └── evaluation.ipynb

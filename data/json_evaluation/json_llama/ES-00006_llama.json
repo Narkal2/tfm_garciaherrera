@@ -1,0 +1,149 @@
+{
+    "datosDelProducto": {
+        "numeroDeRegistro": "ES-00006",
+        "estado": "Vigente",
+        "fechas": {
+            "inscripcion": "09/02/2015",
+            "renovacion": "",
+            "caducidad": "15/12/2025"
+        },
+        "nombreComercial": "APPLAUD 25 SC"
+    },
+    "titularFabricante": {
+        "nombre": "NICHINO EUROPE CO., LTD",
+        "domicilio": {
+            "calle": "5 Pioneer Court, Vision Park",
+            "numero": "19-8 kyobashi 1-chome",
+            "cp": "CB24 9PT",
+            "ciudad": "Histon",
+            "pais": "REINO UNIDO"
+        },
+        "domicilioAlternate": {
+            "calle": "",
+            "numero": "",
+            "cp": "104-8386",
+            "ciudad": "Tokyo",
+            "pais": "JAPÓN"
+        }
+    },
+    "composicion": {
+        "principioActivo": "BUPROFEZIN 25% [SC] P/V"
+    },
+    "envases": {
+        "tipo": "Botellas de polietileno (HDPE)",
+        "capacidad": "0,25 a 5 l"
+    },
+    "usosYDos973isAutorizados": [
+        {
+            "uso": "Arbustos y pequeños árboles ornamentales",
+            "agente": "Moscas blancas, Aleyrodidae",
+            "dosis": "1 l/ha",
+            "numeroDeAplicaciones": "1-2",
+            "intervalos": "7",
+            "volumenDeCaldo": "1000-1250",
+            "condicionesEspecificas": "Aplicar al inicio de la infestación"
+        },
+        {
+            "uso": "Ornamentales herbáceas",
+            "agente": "Moscas blancas, Aleyrodidae",
+            "dosis": "1 l/ha",
+            "numeroDeAplicaciones": "1-2",
+            "intervalos": "7",
+            "volumenDeCaldo": "1000-1250",
+            "condicionesEspecificas": "Aplicar al inicio de la infestación"
+        }
+    ],
+    "plazosDeSeguridad": [
+        {
+            "uso": "Arbustos y pequeños árboles ornamentales, Ornamentales herbáceas",
+            "plazoDeSeguridad": "NP"
+        }
+    ],
+    "claseDeUsuario": "Uso reservado a agricultores y aplicadores profesionales",
+    "mitigacionDeRiesgosEnLaManipulacion": {
+        "medidasDeProteccion": [
+            {
+                "descripcion": "Guantes de protección química y ropa de protección tipo 6 contra salpicaduras de productos líquidos según UNE-EN 13034:2005+A1:2009"
+            },
+            {
+                "descripcion": "Ropa de trabajo adecuada, es decir mono o chaqueta de manga larga y pantalón largo hechos de algodón (> 300 g/m2) o de algodón y poliéster (> 200 g/m2) y calzado resistente para la reentrada"
+            }
+        ],
+        "medidasAdicionalesDeMitigacionDelRiesgo": [
+            {
+                "descripcion": "En la limpieza y mantenimiento del equipo se aplicarán las mismas medidas de protección que en aplicación"
+            },
+            {
+                "descripcion": "Evitar el contacto con el follaje húmedo durante la aplicación"
+            },
+            {
+                "descripcion": "No entrar en los cultivos tratados hasta que se haya secado la pulverización"
+            },
+            {
+                "descripcion": "Se deberá respetar un plazo de reentrada de 24 horas tras la primera aplicación y de 28 días tras la segunda aplicación"
+            }
+        ]
+    },
+    "clasificacionesYEtiquetado": {
+        "claseYPeliculaDePeligroHumana": {
+            "clase": "Sensibilización cutánea",
+            "categoria": "1"
+        },
+        "pictograma": "GHS07 (signo de exclamación)",
+        "palabraDeAdvertencia": "Atención",
+        "indicacionesDePeligro": "H317 -Puede provocar una reacción alérgica en la piel",
+        "consejosDePrudencia": [
+            {
+                "descripcion": "P302+P352 -EN CASO DE CONTACTO CON LA PIEL: Lavar con abundante agua y jabón"
+            },
+            {
+                "descripcion": "P261 -Evitar respirar el polvo/el humo/el gas/la niebla /los vapores/el aerosol"
+            },
+            {
+                "descripcion": "P280 -Llevar guantes, prendas y mascarilla de protección"
+            }
+        ],
+        "claseYPeliculaDePeligroMedioAmbiental": {
+            "clase": "Acuático crónico",
+            "categoria": "2"
+        },
+        "pictogramaMedioAmbiental": "GHS09 (medio ambiente)",
+        "palabraDeAdvertenciaMedioAmbiental": "Atención",
+        "indicacionesDePeligroMedioAmbiental": "H411 -Tóxico para los organismos acuáticos, con efectos duraderos",
+        "consejosDePrudenciaMedioAmbiental": [
+            {
+                "descripcion": "P501 -Elimínense el contenido y/o su recipiente de acuerdo con la normativa sobre residuos peligrosos"
+            },
+            {
+                "descripcion": "P273 -Evitar su liberación al medio ambiente"
+            },
+            {
+                "descripcion": "P391 -Recoger el vertido"
+            }
+        ]
+    },
+    "mitigacionDeRiesgosAmbientales": {
+        "medidasDeMitigacion": [
+            {
+                "descripcion": "Cualquier actividad que se realice con el presente preparado deberá tener en cuenta las condiciones establecidas en los artículos 31, 32 y 33 del Real Decreto 1311/2012, por el que se establece el marco de actuación para conseguir un uso sostenible de los productos fitosanitarios"
+            }
+        ]
+    },
+    "eliminacionDelProductoYOcaldo": {
+        "medidasDeEliminacion": [
+            {
+                "descripcion": "SP1: No contaminar el agua con el producto o su envase. No limpiar el material de aplicación cerca de aguas de superficie. Evitar la contaminación a través de los sistemas de evacuación de aguas de las explotaciones agrícolas o de los caminos"
+            }
+        ]
+    },
+    "gestionDeEnvases": {
+        "medidasDeGestion": [
+            {
+                "descripcion": "Enjuague enérgicamente tres veces cada envase que utilice, vertiendo el agua de lavado al depósito (del pulverizador)"
+            },
+            {
+                "descripcion": "Conforme a lo establecido en el Real Decreto 1416/2001, de 14 de diciembre, sobre envases de productos fitosanitarios, en la etiqueta deberá figurar la siguiente frase: Entregar los envases vacíos o resíduos de envases bien en los puntos de recogida establecidos por los sistemas colectivos de responsabilidad ampliada (SIG) o directamente en el punto de venta donde se hubiera adquirido si dichos envases se han puesto en depósito, devolución y retorno"
+            }
+        ]
+    }
+}
