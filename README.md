@@ -70,36 +70,38 @@ https://github.com/user-attachments/assets/dac16a4b-0765-4d25-ba45-36c1db827ae0
 
 A continuación se muestra la estructura de ficheros del repositorio.
 
-─── Narkal2-tfm_garciaherrera/
-    ├── README.md
-    ├── LICENSE
-    ├── docker-compose.yml
-    ├── requirements.txt
-    ├── data/
-    ├── notebooks/
-    │   └── evaluation.ipynb
-    ├── scripts/
-    │   ├── json_evaluation.py
-    │   └── json_extraction_batch.py
-    └── services/
-        ├── backend/
-        │   ├── Dockerfile
-        │   ├── requirements.txt
-        │   └── src/
-        │       ├── main.py
-        │       └── modules/
-        │           ├── assistant.py
-        │           ├── indexer_redis.py
-        │           └── info_extraction.py
-        ├── frontend/
-        │   ├── Dockerfile
-        │   ├── requirements.txt
-        │   ├── images/
-        │   ├── src/
-        │   │   └── main.py
-        │   └── .streamlit/
-        │       └── config.toml
-        └── redis/
+```
+─── Narkal2-tfm_garciaherrera/   
+    ├── README.md   
+    ├── LICENSE   
+    ├── docker-compose.yml   
+    ├── requirements.txt   
+    ├── data/   
+    ├── notebooks/   
+    │   └── evaluation.ipynb   
+    ├── scripts/   
+    │   ├── json_evaluation.py   
+    │   └── json_extraction_batch.py   
+    └── services/   
+        ├── backend/   
+        │   ├── Dockerfile   
+        │   ├── requirements.txt   
+        │   └── src/   
+        │       ├── main.py   
+        │       └── modules/   
+        │           ├── assistant.py   
+        │           ├── indexer_redis.py   
+        │           └── info_extraction.py   
+        ├── frontend/   
+        │   ├── Dockerfile   
+        │   ├── requirements.txt   
+        │   ├── images/   
+        │   ├── src/   
+        │   │   └── main.py   
+        │   └── .streamlit/   
+        │       └── config.toml   
+        └── redis/   
             └── docker-compose-redis.yml
+```
 
 La carpeta *services* contiene los servicios de la aplicación como tal y el código necesario para su fucionamiento. En las carpetas *notebooks* y *scripts* se encuentran los fragmentos de código utilizados para las evaluaciones. Se ha excluído la carpeta *data* ya que contiene muchos archivos, la mayoría referentes a los resultados obtenidos en las evaluaciones de rendimiento realizadas para ambas funcionalidades.
